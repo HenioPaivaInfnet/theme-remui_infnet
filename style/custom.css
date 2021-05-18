@@ -296,7 +296,7 @@ tr:nth-child(even) {
   background-color: #20292f;
 }
 
-.loginform .card{
+.loginform .card, .loginform .card-body{
   background-color: #20292F;
 
 }

@@ -42,16 +42,21 @@ $THEME->layouts = [
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu' => true),
-    ),/*
+    ),
     'coursecategory' => array(
-	'theme' => 'boost',
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
-    ),*/
+    ),
     // Part of course, typical for modules - default page layout if $cm specified in require_login().
     'incourse' => array(
         'file' => 'incourse.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+    ),
+	// My public page.
+    'mypublic' => array(
+        'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     )
