@@ -74,9 +74,15 @@ ul{
   box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
 }
 .pagelayout-course .course-content .sectionname a {
-color: #fff!important;
-font-weight:700;
+	color: #fff!important;
+	font-weight:700;
 }
+
+/*esconder botao que possiblita esconder o conteudo da seccao*/
+.pagelayout-course .course-content .toggle-section {
+	display: none;
+}
+
 
 /*Lista das competencias na pagina do curso: Ao final desta disciplina, voc� ser� capaz de demonstrar as seguintes compet�ncias*/
 .course-content li.section li.activity ul {
