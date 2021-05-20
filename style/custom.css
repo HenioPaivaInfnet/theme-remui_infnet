@@ -957,30 +957,6 @@ object-fit: fill;
     margin-right: -103px;
 }
 
-/*Icone da lixeira para excluir competencia*/
-.pull-xs-right{
-  float: right;
-}
-
-/*Icone da atividade no historico de 
-Histórico de avaliação da competência*/
-.border-bottom  img{
-    width: 30px;
-    height: auto;
-}
-
-/*aparencia dos botoes das Competências da disciplina por estudante*/
-.competency-idnumber .bigfoot-footnote__button{
-    background-color: #fff;
-}
-
-/*Espaçamento vertical no "popup" da distribuição de competencias*/
-.user-competency-full-info .border-bottom {
-    padding-bottom: 16px;
-    margin-bottom: 16px;
-    border-bottom: 1px solid #ccc;
-}
-
 /*Renata*/
 /*Página dos cursos das Escolas*/
 .generalbox.info h1+p>img{
