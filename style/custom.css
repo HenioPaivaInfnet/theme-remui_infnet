@@ -297,6 +297,29 @@ tr:nth-child(even) {
   background-color: #8BC34A;
 }
 
+/*Icone da lixeira para excluir competencia*/
+.pull-xs-right{
+  float: right;
+}
+
+/*Icone da atividade no historico de avaliação da competência*/
+.border-bottom  img{
+    width: 30px;
+    height: auto;
+}
+
+/*aparencia dos botoes das Competências da disciplina por estudante*/
+.competency-idnumber .bigfoot-footnote__button{
+    background-color: #fff;
+}
+
+/*Espaçamento vertical no "popup" da distribuição de competencias*/
+.user-competency-full-info .border-bottom {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
 /*Card do login*/
 #page-login-index .loginform, #page-login-index .signupform, #page-login-signup .loginform, #page-login-signup .signupform {
   background-color: #20292f;
