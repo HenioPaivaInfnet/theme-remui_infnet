@@ -1,330 +1,12 @@
-/*Ajuster do Remui*/
-/*Ajuste bloco da barra direita do remui */
-ul {
-  padding-inline-start: 15px;
-}
-
-/*Esconder banco de conteudo e arquivo privado*/
-#nav-drawer [data-key='contentbank'] {
-  display: none !important;
-}
-
-#nav-drawer [data-key='privatefiles'] {
-  display: none !important;
-}
-
-#label_3_10 {
+.license-notice {
   display: none;
 }
-
-/*Ajuste do course overview*/
-/*Aparencia do paragrafos dentro dos cursos*/
-.course-content ul.topics li.section .content p,
-.course-content ul.weeks li.section .content p,
-.course-content ul.ctopics li.section.main .content p,
-.course-content ul.ctopics li.tcsection .content p {
-  line-height: 28px;
-  font-size: 17px;
-  margin-bottom: 12px;
-  color: #000
-}
-
-/*label do tp obrigatorio*/
-.required_assign {
-  background: #F44336;
-  border-radius: 2px;
-  color: #fff;
-  /* display: inline-block;
-  font-size: 10px;*/
-  font-family: arial;
-  font-weight: 300;
-  padding: 0px 5px;
-  text-transform: uppercase;
-}
-
-/*Titulo da disciplina*/
-.page-header-course-code,
-.page-header-period-code {
-  font-size: 1.2rem;
-  margin-right: 16px;
-  font-weight: 300;
-}
-
-.disciplina-fullname {
-  font-size: 2.5rem;
-  clear: both;
-  display: block;
-  font-weight: 400;
-}
-
-/*Label da etapa da seccao do curso*/
-.pagelayout-course .course-content .sectionname {
-  font-size: 12px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #fff !important;
-  background-color: #2455b6de;
-  display: inline-block;
-  padding: 0 16px;
-  border-radius: 2px;
-  position: absolute;
-  width: 110px;
-  top: 16px;
-  z-index: 10;
-  left: -17px;
-  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
-}
-
-.pagelayout-course .course-content .sectionname a {
-  color: #fff !important;
-  font-weight: 700;
-}
-
-/*Lista das competencias na pagina do curso: Ao final desta disciplina, voc� ser� capaz de demonstrar as seguintes compet�ncias*/
-.course-content li.section li.activity ul {
-  list-style: none;
-}
-
-.course-content .summary ul,
-.modtype_label ul {
-  margin: 20px 0px 20px -20px;
-  list-style: circle;
-  padding-left: 40px;
-}
-
-.course-content .summary ul li,
-.modtype_label ul li {
-  font-size: 17px;
-  line-height: 28px;
-  margin: 0px 0px 0px 30px;
-}
-
-.modtype_label .pl-competencias.abertura ul li:before {
-  content: "\f10c";
-}
-
-.modtype_label .pl-competencias ul li:before {
-  font-family: "FontAwesome";
-  content: "\f00c";
-  margin-right: 8px;
-  color: #089CA8;
-}
-
-/*Capa do livro das pos live*/
-.pl-row .capa {
-  min-width: 150px;
-}
-
-.capa img {
-  width: 100%;
-  border: #ddd solid 1px !important;
-}
-
-/*Ajustes do roteiro de apredizagem*/
-/* alert terceiros nos videos do roteiro*/
-.caption-terceiros:hover,
-.pl-embed-video:hover+.caption-terceiros {
-  opacity: 1;
-}
-
-.caption-terceiros {
-  margin-top: -30px;
-  font-family: 'Roboto', sans-serif;
-  background: #2196F3;
-  color: rgba(255, 255, 255, .87);
-  font-size: 11px;
-  padding: 8px;
-  line-height: 16px;
-  width: 100%;
-  text-rendering: optimizeLegibility;
-  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-  opacity: 0;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-.caption-terceiros a {
-  color: rgba(255, 255, 255, .87) !important;
-  text-decoration: underline;
-}
-
-/*estilo do h2 ROTEIRO DE APRENDIZAGEM*/
-#maincontent+h2 {
-  font-size: 14px;
-  margin: 0 0 32px 0;
-  text-transform: uppercase;
-  color: #888;
-  letter-spacing: 1px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-/*Estilo da tabela no roteiro(altera a aparencia no titulo de outras paginas)*/
-table {
-  width: 100%;
-}
-
-/*Altera aparencia de tabelas por todo Moodle*/
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-/*Altera aparecias relacionadas ao label de competencias*/
-/*FALTA IMPLEMENTAR!!! */
-.obg-hl {
-  display: none;
-  visibility: hidden;
-  background: #F44336;
-  border-radius: 2px;
-  color: #fff;
-  display: inline-block;
-  font-size: 10px;
-  font-family: arial;
-  font-weight: 300;
-  padding: 0px 5px;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-}
-
-/*Competencias */
-.comp {
-  background: #607D8B;
-  border-radius: 2px;
-  color: #fff;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 7px 9px;
-  display: block;
-  margin: auto -8px 8px -8px;
-}
-
-.gradingform_rubric .criterion .description {
-  font-weight: 600;
-  color: black;
-}
-
-/* TP projeto de bloco rubrica cumulativas*/
-.tpn {
-  display: inline-block;
-  font-size: 10px;
-  font-family: arial;
-  font-weight: 300;
-  padding: 8px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  /* position: absolute;
-    top: 0;
-    left: 0;*/
-}
-
-.tpn+.comp {
-  margin-top: 16px;
-}
-
-.tpn.tp1 {
-  background: #F44336;
-  color: rgba(255, 255, 255, .87);
-}
-
-.tpn.tp2 {
-  background: #E91E63;
-  color: rgba(255, 255, 255, .87);
-}
-
-.tpn.tp3 {
-  background: #9C27B0;
-  color: rgba(255, 255, 255, .87);
-}
-
-.tpn.tp4 {
-  background: #673AB7;
-  color: rgba(255, 255, 255, .87);
-}
-
-.tpn.tp5 {
-  background: #3F51B5;
-  color: rgba(255, 255, 255, .87);
-}
-
-.tpn.tp6 {
-  background: #2196F3;
-  color: rgba(0, 0, 0, .87);
-}
-
-.tpn.tp7 {
-  background: #00BCD4;
-  color: rgba(0, 0, 0, .87);
-}
-
-.tpn.tp8 {
-  background: #009688;
-  color: rgba(255, 255, 255, .87);
-}
-
-.tpn.tp9 {
-  background: #4CAF50;
-  color: rgba(0, 0, 0, .87);
-}
-
-.tpn.tp10 {
-  background: #8BC34A;
-  color: rgba(0, 0, 0, .87);
-}
-
-/*Label das compentecias no relatorio */
-.label.ND {
-  background-color: #F44336;
-  font-size: 16px;
-  padding: 6px 8px;
-}
-
-.label.DML,
-.label.DL,
-.label.D {
-  background-color: #8BC34A;
-  font-size: 16px;
-  padding: 6px 8px;
-}
-
-.tag-info.ND {
-  background-color: #F44336;
-}
-
-.tag.Sim,
-.tag-info.D,
-.tag-info.DL,
-.tag-info.DML {
-  background-color: #8BC34A;
-}
-
-/*Card do login*/
-#page-login-index .loginform,
-#page-login-index .signupform,
-#page-login-signup .loginform,
-#page-login-signup .signupform {
-  background-color: #20292f;
-}
-
-.loginform .card {
-  background-color: #20292F;
-
-}
-
-.loginform h3 {
-  color: #fff;
-}
-
-.checkbox-custom label {
-  color: #fff;
-}
-
-/*Alterações Renata*/
 
 /* Generico */
+*:focus {
+  outline: 0 !important;
+}
+
 input {
   box-sizing: border-box;
 }
@@ -340,18 +22,15 @@ body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-weight: normal;
-  background: #ECEFF1;
+  background: #eceff1;
 }
-
 
 h1,
 h2 {
   font-weight: 400;
-  color: #023e5a;
-  /*olhar essa cor*/
-  line-height: 35px;
+  color: #3a4d56; /*olhar essa cor*/
 }
 
 h3,
@@ -364,31 +43,31 @@ h4 {
 
 /*Ajusta o Header*/
 header#page-header .card-body {
-  margin: 0 -20px;
+  margin: -20px -20px;
+  -webkit-box-shadow: 0 8px 10px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
 }
-
 .disciplina-fullname {
   color: #3a4d56;
 }
-
 h3.page-title {
   font-size: 42px;
   line-height: 1.2em;
   margin-left: 20px;
+  padding: 10px 0;
 }
-
 /*breadcrumb*/
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   content: "►";
 }
-
 .breadcrumb {
   padding: 0;
   margin-left: 22px;
   margin-bottom: 0px;
   line-height: 1.3em;
 }
-
 .breadcrumb-item a {
   color: #7f8082;
   font-weight: 400;
@@ -397,23 +76,19 @@ h3.page-title {
 
 /*Links*/
 a {
-  color: #5f85d1;
-  font-weight: 500;
+  color: #3b3b3d;
+  font-weight: 400;
 }
 
 a:hover,
 a:focus {
-  color: #4180ff;
+  color: #162fb6;
   text-decoration: none;
 }
 
-/*Legendas*/
-small {
-  font-size: 85%;
-}
+/*Fim do genérico*/
 
-/*Geral*/
-
+/*geral*/
 .container {
   max-width: 1680px;
   margin: 0 auto;
@@ -421,46 +96,46 @@ small {
   padding-left: 20px;
 }
 
-/*box/container? da região principal (-20px para subir o box conteúdo)*/
+/*box/container? da região principal (-20px para subir o box conteúdo) acho que não seja necessário
 #region-main {
-  position: relative;
-  margin-top: -20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
+    position: relative;
+    margin-top: -20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}*/
 
 /*ajusta o tamanho dos blocos header e content */
 .card-body {
-
   background: #fff;
-  /*sem essa cor a cor #region-main div[role="main"] assume?*/
-  -webkit-box-shadow: 0 8px 10px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
-  box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
+  /*sem essa cor a cor
+#region-main div[role="main"] assume?*/
+  /*-webkit-box-shadow: 0 8px 10px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);*/
 }
-
+/*ajusta uma camada*/
+div#region-main-box {
+  margin-bottom: -20px;
+}
 /*Ajusta o box para preencher toda a página*/
-#page #region-main>.card,
-#page #region-main>.groupinfobox,
-#page .userprofile .profile_tree #region-main>section,
-.userprofile .profile_tree #page #region-main>section {
-  margin: -40px;
+#page #region-main > .card,
+#page #region-main > .groupinfobox,
+#page .userprofile .profile_tree #region-main > section,
+.userprofile .profile_tree #page #region-main > section {
+  margin: -30px -20px;
+  padding: 0 20px;
 }
 
 /*desce o conteúdo que estava subindo o header*/
 #page #region-main {
   padding: 30px 20px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 /*determina o tamanho do box do conteúdo do curso, padding de 20px para desgrudar o bloco cinza das laterais, desalinhou os textos com o "enrolled students" */
 #region-main div[role="main"] {
   padding: 0 20px;
 }
-
-/*Fim do genérico*/
-
-/*Course Overview*/
 
 /*Sobe todo o box do conteúdo*/
 .pagelayout-course #region-main {
@@ -474,13 +149,13 @@ small {
   margin-top: -20px;
 }
 
-/*tira o estilo da lista, é necessário?
+/*tira o estilo da lista, é necessário?*/
 .course-content ul.topics {
   margin: 0px;
   list-style: none;
-}*/
+}
 
-/*bordinha embaixo do box da etapa */
+/*bordinha de baixo do box das etapas */
 .course-content ul li.section.main {
   border-bottom: 1px solid #ddd;
   margin: 0;
@@ -488,9 +163,10 @@ small {
 
 /*estilo sombreado do box das etapas  o arredondamento das bordas é na classe .rounded*/
 .course-content ul.topics li.section {
-  /*position: relative; esse position ajusta as imagens no topo de cada li no tema frank, não vejo necessidade*/
+  position: relative; /*esse position ajusta as imagens no topo de cada li no tema frank*/
   -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
   padding-top: 332px;
 }
@@ -504,21 +180,10 @@ small {
 .pagelayout-course .course-content .section.main {
   background: #fff !important;
   margin-bottom: 32px;
-  position: relative;
-  /*testar se resolve o problema das imagens*/
+  position: relative; /*testar se resolve o problema das imagens*/
 }
 
-/*Estilo do conteúdo course overview*/
-
-.pl-curadoria {
-    margin: 0 -59px;
-    padding: 32px 64px 24px 58px;
-    color: rgba(0,0,0,.87);
-    background: #f7de1f;
-    background: -webkit-linear-gradient(bottom left,rgba(247,222,31,1) 0%,rgba(255,238,88,1) 100%);
-    background: -o-linear-gradient(bottom left,rgba(247,222,31,1) 0%,rgba(255,238,88,1) 100%);
-    background: linear-gradient(to top right,rgba(247,222,31,1) 0%,rgba(255,238,88,1) 100%);
-}
+/*Estilo do conteúdo*/
 
 /*Espaço entre as linhas do conteúdo*/
 li {
@@ -545,25 +210,19 @@ li {
   line-height: 32px;
   text-transform: uppercase;
   color: #fff !important;
-  background-color: #2455b6de;
+  background-color: #003f7acc;
   display: inline-block;
-  padding: 0 0.8rem;
+  padding: 0 0.4em;
   border-radius: 2px;
   position: absolute;
   top: 16px;
   z-index: 10;
   left: -17px;
-  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 25%), 0 8px 15px rgb(0 0 0 / 22%);
 }
-
 .pagelayout-course .course-content .sectionname a {
   color: #fff !important;
   font-weight: 700;
-}
-
-/*Escondi a setinha da tag das seções pois não estava funcionando*/
-.pagelayout-course .course-content .toggle-section.down {
-  display: none;
 }
 
 /*box do conteúdo*/
@@ -579,7 +238,6 @@ li {
 }
 
 h1 {
-  /*display: block;*/
   margin: 10px 0;
   font-family: inherit;
   font-weight: 500;
@@ -587,7 +245,7 @@ h1 {
   font-size: 38.5px;
 }
 
-.topics li.section .content>div>div>h1+p>img {
+.topics li.section .content > div > div > h1 + p > img {
   width: auto;
   min-height: 100%;
   min-width: 100%;
@@ -600,7 +258,8 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.section .content .summary h1+p {
+.section .content .summary h1 + p {
+  border-bottom: 4px solid #162fb6;
   position: absolute;
   width: 100%;
   height: 300px;
@@ -610,14 +269,13 @@ h1 {
   border-top-right-radius: 3px;
   overflow: hidden;
 }
-
 .course-content ul.topics li.section .content,
 .course-content ul.weeks li.section .content {
   padding-top: 332px;
 }
 
 /*deixar a img  das etapas em todo o conteúdo*/
-.summary>div>p>img {
+.summary > div > p > img {
   object-fit: fill;
 }
 
@@ -626,364 +284,21 @@ h1 {
   color: #3a4d56;
 }
 
-/*Renata*/
-/*Página dos cursos das Escolas*/
-.generalbox.info h1+p>img{
-  height: auto;
-  width: auto;
-  min-height: 100%;
-  min-width: 100%;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  vertical-align: middle;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-}
-
-#page-course-index-category .generalbox.info {
-  margin-bottom: 15px;
-  border: 1px dotted #ddd;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  padding: 5px;
-margin-top:300px;
-}
-/*esconde o campo de busca dos cursos*/
-#page-course-index-category .categorypicker, #coursesearch {
-  display: none;
-  visibility: hidden;
-}
-.generalbox.info h1+p {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  top: 0;
-  left: 0;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  overflow: hidden;
-}
-
-
-
-
-
-/*
-.license-notice {display: none;}
-
-/* Generico */
-*:focus {
-  outline: 0 !important;
-}
-
-input {
-  box-sizing: border-box;
-}
-
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
-}
-
-html,
-body {
-  height: 100%;
-  color: #777;
-}
-
-body {
-  font-family: 'Roboto', sans-serif !important;
-  font-weight: normal;
-  background: #ECEFF1;
-}
-
-
-h1,
-h2 {
-  font-weight: 400;
-  color: #3a4d56; /*olhar essa cor*/
-}
-
-h3,
-h4 {
-  font-weight: 400;
-  color: #3b3b3d;
-}
-
-/*header*/
-
-/*Ajusta o Header*/
-header#page-header .card-body {
-    margin: -20px;
-    -webkit-box-shadow: 0 8px 10px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
-    box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
-}
-}
-.disciplina-fullname{
-color: #3a4d56;
-}
-h3.page-title {
-    font-size: 42px;
-    line-height: 1.2em;
-    margin-left: 20px;
-padding: 10px 0;
-}
-/*breadcrumb*/
-.breadcrumb-item+.breadcrumb-item::before {
-    content: "►";
-}
-.breadcrumb {
-padding: 0;
-    margin-left: 22px;
-    margin-bottom: 0px;
-    line-height: 1.3em;
-}
-.breadcrumb-item a {
-color: #7f8082;
-    font-weight: 400;
-    font-size: 13px;
-}
-
-/*Links*/
-a {
-  color: #3b3b3d;
-font-weight: 400;
-}
-
-a:hover, a:focus {
-  color: #162FB6;
-text-decoration:none;
-}
-
-/*Fim do genérico*/
-
-/*geral*/
-.container {
-    max-width: 1680px;
-    margin: 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-/*box/container? da região principal (-20px para subir o box conteúdo)
-#region-main {
-    position: relative;
-    margin-top: -20px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}*/
-
-/*ajusta o tamanho dos blocos header e content */
-.card-body {
-background:#fff; /*sem essa cor a cor
-#region-main div[role="main"] assume?*/
-}
-
-/*Ajusta o box para preencher toda a página*/
-#page #region-main>.card, #page #region-main>.groupinfobox, #page .userprofile .profile_tree #region-main>section, .userprofile .profile_tree #page #region-main>section{
-    /margin:  -70px -20px;
-}
-
-/*desce o conteúdo que estava subindo o header*/
-#page #region-main {
-  padding: 30px 20px;
-margin-top: 40px;
-}
-
-
-/*determina o tamanho do box do conteúdo do curso, padding de 20px para desgrudar o bloco cinza das laterais, desalinhou os textos com o "enrolled students" */
-#region-main div[role="main"] {
-    padding: 0 20px;
-}
-
-/*Sobe todo o box do conteúdo, é necessário?*/
-.pagelayout-course #region-main {
-padding:25px 0 !important;
-margin-top: -10px;
-position:relative;
-}
-
-/*posiciona o box do conteúdo da seção, (-30px para subir o  box )*/
-.course-content {
-  margin-top: -20px;
-}
-
-/*tira o estilo da lista, é necessário?*/
-.course-content ul.topics {
-   margin: 0px;
-    list-style: none;
-}
-
-/*bordinha de baixo do box das etapas */
-.course-content ul li.section.main {
-    border-bottom: 1px solid #ddd;
-margin: 0;
-}
-
-/*estilo sombreado do box das etapas  o arredondamento das bordas é na classe .rounded*/
-.course-content ul.topics li.section {
-    position: relative; /*esse position ajusta as imagens no topo de cada li no tema frank*/
-    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
-    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-padding-top: 332px;
-}
-
-/*muda cor do box da introdução etapas*/
-.pagelayout-course #section-0{
-background-color: #fff!important;
-}
-
-/*muda a cor do box das etapas*/
-.pagelayout-course .course-content .section.main {
-background: #fff !important;
-    margin-bottom: 32px;
-    position: relative; /*testar se resolve o problema das imagens*/
-}
-
-/*Estilo do conteúdo*/
-
-/*Espaço entre as linhas do conteúdo*/
-li {
-    line-height: 1.5rem;
-}
-
-/*Alinhamento do conteúdo*/
-.course-content ul.topics li.section .content, .course-content ul.weeks li.section .content{
-   margin-right: 20px;
-    margin-left: 20px;
-    padding: 0;
-}
-
-/*tag*/
-
-.hidden {
-    display: none;
-    visibility: hidden;
-}
-
-.pagelayout-course .course-content .sectionname {
-    font-size: 12px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: #fff !important;
-    background-color: #2455b6de;
-  display: inline-block;
-    padding: 0 16px;
-    border-radius: 2px;
-   position: absolute;
-width: 110px;
-    top: 16px;
-    z-index: 10;
-    left: -17px;
-    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
-}
-.pagelayout-course .course-content .sectionname a {
-color: #fff!important;
-font-weight:700;
-}
-
-/*box do conteúdo*/
-.course-content ul.topics li.section .summary {
-    margin-right: 25px;
-margin-left:25px;
-}
-
-/*tirar barra de rolagem*/
-.no-overflow {
-    overflow: initial;
-padding-bottom: 1px;
-}
-
-h1 {
-    margin: 10px 0;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 2.5rem;
-font-size:38.5px;
-}
-
-.topics li.section .content>div>div>h1+p>img {
-    width: auto;
-    min-height: 100%;
-    min-width: 100%;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    vertical-align: middle;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-}
-
-.section .content .summary h1+p {
-    border-bottom: 4px solid #162fb6;
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    top: 0;
-    left: 0;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    overflow: hidden;
-}
-.course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
-padding-top: 332px;
-}
-
-/*deixar a img  das etapas em todo o conteúdo*/
-.summary>div>p>img {
-object-fit: fill;
-}
-
-/*Contagem de alunos*/
-.stats-card.d-flex.align-items-center.justify-content-center.px-2.flex-wrap {
-    color: #3a4d56;
-}
-
 /*Bloco de competências*/
-.modtype_label .pl-competencias.abertura{
+.modtype_label .pl-competencias.abertura {
   margin-top: -20px;
 }
 
 .modtype_label .pl-competencias {
-    min-width: 100%;
-    background-color: #eceff1;
-    padding: 16px 60px;
-    margin-left: -99px;
-    margin-right: -103px;
+  min-width: 100%;
+  background-color: #eceff1;
+  padding: 16px 60px;
+  margin-left: -99px;
+  margin-right: -103px;
 }
 
-/*Icone da lixeira para excluir competencia*/
-.pull-xs-right{
-  float: right;
-}
-
-/*Icone da atividade no historico de 
-Histórico de avaliação da competência*/
-.border-bottom  img{
-    width: 30px;
-    height: auto;
-}
-
-/*aparencia dos botoes das Competências da disciplina por estudante*/
-.competency-idnumber .bigfoot-footnote__button{
-    background-color: #fff;
-}
-
-/*Espaçamento vertical no "popup" da distribuição de competencias*/
-.user-competency-full-info .border-bottom {
-    padding-bottom: 16px;
-    margin-bottom: 16px;
-    border-bottom: 1px solid #ccc;
-}
-
-/*Renata*/
 /*Página dos cursos das Escolas*/
-.generalbox.info h1+p>img{
+.generalbox.info h1 + p > img {
   height: auto;
   width: auto;
   min-height: 100%;
@@ -992,24 +307,28 @@ Histórico de avaliação da competência*/
   left: 50%;
   position: absolute;
   vertical-align: middle;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #page-course-index-category .generalbox.info {
-  margin-bottom: px;
-    border: none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-margin-top: 300px;
+  border: none;
+  padding: 30px;
+}
+/*desce o conteúdo da árvore para imagem não esconder*/
+.categorypicker + .box.generalbox.info > .no-overflow {
+  margin-top: 300px;
 }
 /*esconde o campo de busca dos cursos*/
-#page-course-index-category .categorypicker, #coursesearch {
+#page-course-index-category .categorypicker,
+#coursesearch {
   display: none;
   visibility: hidden;
 }
-.generalbox.info h1+p {
+
+/*Posiciona os elementos abaixo da img*/
+.generalbox.info h1 + p {
   position: absolute;
   width: 100%;
   height: 300px;
@@ -1017,12 +336,117 @@ margin-top: 300px;
   left: 0;
   overflow: hidden;
 }
-#page-site-index #region-main, #page-course-index-category #region-main, #page-course-index #region-main, #page-admin-index #region-main, #page-course-view-site #region-main, #page-blog-index #region-main, #page-badges-view #region-main, #page-tag-search #region-main, #page-grade-report-grader-index #region-main, #page-grade-report-history-index #region-main, #page-grade-report-outcomes-index #region-main, #page-grade-report-overview-index #region-main, #page-grade-report-singleview-index #region-main, #page-grade-report-user-index #region-main, #page-grade-edit-tree-index #region-main, #page-grade-edit-settings-index #region-main, #page-grade-report-grader-preferences #region-main, #page-grade-edit-letter-index #region-main, #page-grade-edit-outcome-course #region-main, #page-grade-edit-scale-index #region-main, #page-course-edit #region-main, #page-enrol-users #region-main, #page-enrol-instances #region-main, #page-enrol-manual-edit #region-main, #page-group-index #region-main, #page-admin-roles-permissions #region-main, #page-admin-roles-check #region-main, #page-enrol-otherusers #region-main, #page-enrol-manual-unenrolself #region-main, #page-filter-manage #region-main, #page-report-log-index #region-main, #page-report-loglive-index #region-main, #page-report-outline-index #region-main, #page-report-participation-index #region-main, #page-course-reset #region-main, #page-question-edit #region-main, #page-question-category #region-main, #page-question-import #region-main, #page-question-export #region-main, #page-admin-registration-register #region-main, #page-admin-setting-optionalsubsystems #region-main, #page-admin-user #region-main, #page-admin-user-user_bulk #region-main, #page-admin-user-editadvanced #region-main, #page-admin-setting-userdefaultpreferences #region-main, #page-admin-user-profile-index #region-main, #page-admin-cohort-index #region-main, #page-admin-tool-uploaduser-index #region-main, #page-admin-tool-uploaduser-picture #region-main, #page-admin-setting-userpolicies #region-main, #page-admin-roles-admins #region-main, #page-admin-roles-manage #region-main, #page-admin-roles-assign #region-main, #page-admin-tool-capability-index #region-main, #page-admin-tool-unsuproles-index #region-main, #page-course-management #region-main, #page-course-editcategory #region-main, #page-backup-restorefile #region-main, #page-admin-setting-coursesettings #region-main, #page-admin-setting-courserequest #region-main, #page-admin-setting-backupgeneralsettings #region-main, #page-admin-setting-importgeneralsettings #region-main, #page-admin-setting-automated #region-main, #page-admin-tool-uploadcourse-index #region-main, #page-admin-local-autocompetencygrade-consistencycheck #region-main {
-   / padding: 60px;
-    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
-    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+
+/*preenche toda a tela do box de conteúdo com*/
+#page-site-index #region-main,
+#page-course-index-category #region-main,
+#page-course-index #region-main,
+#page-admin-index #region-main,
+#page-course-view-site #region-main,
+#page-blog-index #region-main,
+#page-badges-view #region-main,
+#page-tag-search #region-main,
+#page-grade-report-grader-index #region-main,
+#page-grade-report-history-index #region-main,
+#page-grade-report-outcomes-index #region-main,
+#page-grade-report-overview-index #region-main,
+#page-grade-report-singleview-index #region-main,
+#page-grade-report-user-index #region-main,
+#page-grade-edit-tree-index #region-main,
+#page-grade-edit-settings-index #region-main,
+#page-grade-report-grader-preferences #region-main,
+#page-grade-edit-letter-index #region-main,
+#page-grade-edit-outcome-course #region-main,
+#page-grade-edit-scale-index #region-main,
+#page-course-edit #region-main,
+#page-enrol-users #region-main,
+#page-enrol-instances #region-main,
+#page-enrol-manual-edit #region-main,
+#page-group-index #region-main,
+#page-admin-roles-permissions #region-main,
+#page-admin-roles-check #region-main,
+#page-enrol-otherusers #region-main,
+#page-enrol-manual-unenrolself #region-main,
+#page-filter-manage #region-main,
+#page-report-log-index #region-main,
+#page-report-loglive-index #region-main,
+#page-report-outline-index #region-main,
+#page-report-participation-index #region-main,
+#page-course-reset #region-main,
+#page-question-edit #region-main,
+#page-question-category #region-main,
+#page-question-import #region-main,
+#page-question-export #region-main,
+#page-admin-registration-register #region-main,
+#page-admin-setting-optionalsubsystems #region-main,
+#page-admin-user #region-main,
+#page-admin-user-user_bulk #region-main,
+#page-admin-user-editadvanced #region-main,
+#page-admin-setting-userdefaultpreferences #region-main,
+#page-admin-user-profile-index #region-main,
+#page-admin-cohort-index #region-main,
+#page-admin-tool-uploaduser-index #region-main,
+#page-admin-tool-uploaduser-picture #region-main,
+#page-admin-setting-userpolicies #region-main,
+#page-admin-roles-admins #region-main,
+#page-admin-roles-manage #region-main,
+#page-admin-roles-assign #region-main,
+#page-admin-tool-capability-index #region-main,
+#page-admin-tool-unsuproles-index #region-main,
+#page-course-management #region-main,
+#page-course-editcategory #region-main,
+#page-backup-restorefile #region-main,
+#page-admin-setting-coursesettings #region-main,
+#page-admin-setting-courserequest #region-main,
+#page-admin-setting-backupgeneralsettings #region-main,
+#page-admin-setting-importgeneralsettings #region-main,
+#page-admin-setting-automated #region-main,
+#page-admin-tool-uploadcourse-index #region-main,
+#page-admin-local-autocompetencygrade-consistencycheck #region-main {
+  padding: 10px 0;
 }
 
+/*Ajusta o "expandir tudo"*/
+.collapsible-actions {
+  padding: 20px 50px;
+}
+/*Página dos cursos*/
+div#yui_3_17_2_1_1621869126661_36 {
+  padding: 0 50px;
+}
+/*separadores*/
+.course_category_tree .category {
+  border-bottom: 1px solid #ddd;
+}
+/*botão azul testando*/
+.btn.btn-secondary {
+  border: none;
+  color: #fff !important;
+  font-weight: 700;
+  background: #003f7a;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 8px 16px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%), 0 3px 3px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
+  transition: all 0.3s ease-out;
+}
 
-*/
+.btn-secondary:hover {
+  box-shadow: 0 6px 10px rgb(0 0 0 / 19%), 0 8px 10px rgb(0 0 0 / 23%);
+  background: #003f7a !important;
+}
+/*desgruda o botão e alinha o conteúdo*/
+.subcategories {
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+/*Página das turmas*/
+/*Tirar o ícone de link*/
+.coursebox > .info > .coursename a {
+  background-image: none;
+  padding-left: 10px;
+}
