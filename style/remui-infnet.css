@@ -297,11 +297,6 @@ tr:nth-child(even) {
   background-color: #8BC34A;
 }
 
-/*Icone da lixeira para excluir competencia*/
-.pull-xs-right{
-  float: right;
-}
-
 /*Icone da atividade no historico de avaliação da competência*/
 .border-bottom  img{
     width: 30px;
