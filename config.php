@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 require_once(__DIR__ . '/lib.php');
                                                                                           
 $THEME->name = 'remui_infnet';                                                                                                                                                                                                                               
-$THEME->sheets = ['custom', 'plui', 'pl-grid','bigfoot-bottom','fluidbox','monokai-min'];     
+$THEME->sheets = ['remui-infnet', 'plui', 'pl-grid','bigfoot-bottom','fluidbox','monokai-min'];     
 $THEME->editor_sheets = [];
 $THEME->editor_scss = ['editor'];
 $THEME->usefallback = true;
