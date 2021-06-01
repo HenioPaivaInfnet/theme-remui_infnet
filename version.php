@@ -25,7 +25,7 @@
 // This line protects the file from being accessed by a URL directly.   
 defined('MOODLE_INTERNAL') || die();
 // This is the version of the plugin. 
-$plugin->version = 2021051501;
+$plugin->version = 2021052600;
 // This is the version of Moodle this plugin requires. 
 $plugin->requires  = 2018112800;
 // This version's maturity level.

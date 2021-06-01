@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 require_once(__DIR__ . '/lib.php');
                                                                                           
 $THEME->name = 'remui_infnet';                                                                                                                                                                                                                               
-$THEME->sheets = ['custom', 'plui', 'pl-grid','bigfoot-bottom','fluidbox','monokai-min'];     
+$THEME->sheets = ['remui-infnet', 'plui', 'pl-grid','bigfoot-bottom','fluidbox','monokai-min'];     
 $THEME->editor_sheets = [];
 $THEME->editor_scss = ['editor'];
 $THEME->usefallback = true;
@@ -42,16 +42,29 @@ $THEME->layouts = [
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu' => true),
-    ),/*
+    ),
     'coursecategory' => array(
-	'theme' => 'boost',
         'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
-    ),*/
+    ),
     // Part of course, typical for modules - default page layout if $cm specified in require_login().
     'incourse' => array(
         'file' => 'incourse.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+    ),
+	// The site home page.
+    'frontpage' => array(
+	//'theme' => 'remui',
+        'file' => 'frontpage.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nonavbar' => true),
+    ),
+	// My public page.
+    'mypublic' => array(
+        'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     )
