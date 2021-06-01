@@ -28,13 +28,13 @@ body {
 h1,
 h2 {
   font-weight: 400;
-  color: #3a4d56; /*olhar essa cor*/
+  color: #3a4d56;
 }
 
 h3,
 h4 {
   font-weight: 400;
-  color: #3b3b3d;
+  color: #01172b;
 }
 
 /*header*/
@@ -53,7 +53,7 @@ h3.page-title {
     font-size: 42px;
     line-height: 1.2em;
     margin-left: 20px;
-padding: 10px 0;
+padding: 30px 0;
 }
 /*breadcrumb*/
 .breadcrumb-item+.breadcrumb-item::before {
@@ -97,8 +97,6 @@ color: #00B8D4;
 text-decoration: underline;
 }
 
-/*Fim do genérico*/
-
 /*geral*/
 .container {
     max-width: 1680px;
@@ -107,22 +105,9 @@ text-decoration: underline;
     padding-left: 20px;
 }
 
-/*box/container? da região principal (-20px para subir o box conteúdo) acho que não seja necessário
-#region-main {
-    position: relative;
-    margin-top: -20px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}*/
-
-/*ajusta o tamanho dos blocos header e content */
+/*Cor de Fundo */
 .card-body {
-background:#fff; 
-/*sem essa cor a cor
-#region-main div[role="main"] assume?*/
-/*-webkit-box-shadow: 0 8px 10px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
--moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
-box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);*/
+background:#FFF; 
 }
 
 /*Ajusta o box para preencher toda a página*/
@@ -131,7 +116,7 @@ box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);*/
 padding: 0 20px;
 }
 
-/*desce o conteúdo que estava subindo o header*/
+/*desce o conteúdo que estava subindo no header*/
 #page #region-main {
   padding: 30px 20px;
 margin-top: 40px;
@@ -141,6 +126,7 @@ margin-top: 40px;
 /*determina o tamanho do box do conteúdo do curso, padding de 20px para desgrudar o bloco cinza das laterais, desalinhou os textos com o "enrolled students" */
 #region-main div[role="main"] {
     padding: 0 20px;
+    margin-top: 40px;
 }
 
 /*Sobe todo o box do conteúdo*/
@@ -189,6 +175,26 @@ background: #fff !important;
 }
 
 /*Estilo do conteúdo*/
+
+/*Home-aluno*/
+
+/*Retira espaçamento do carroussel e do header*/
+.home-sections {
+    margin: -50px 0;
+}
+
+/*Tamanho do carrossel
+.carousel-item {
+    height: 500px;
+}
+.carousel-caption {
+bottom: 80px;
+}
+.carousel-indicators {
+    bottom: 50px;
+}
+
+*/
 
 /*Espaço entre as linhas do conteúdo*/
 li {
@@ -246,7 +252,7 @@ padding-bottom: 1px;
 }
 
 h1 {
-    margin: 1px 0;
+    margin: 10px 0;
     font-family: inherit;
     font-weight: 500;
     line-height: 2.5rem;
@@ -355,8 +361,12 @@ object-fit: fill;
 
 }
 /*Página dos cursos*/
-div#yui_3_17_2_1_1621869126661_36 {
+/*div#yui_3_17_2_1_1621869126661_36 {
     padding: 0 50px;
+}*/
+/*sobe o conteúdo da árvore de escolas*/
+.course_category_tree.clearfix.category-browse.category-browse-0 {
+    margin-top: -55px;
 }
 /*separadores*/
 .course_category_tree .category {
@@ -367,10 +377,10 @@ div#yui_3_17_2_1_1621869126661_36 {
 
 .btn.btn-secondary, .btn.btn-sm, .action-menu .dropdown-toggle {
 border:none;
-    color: #fff!important;
+color:#fff!important;
     font-weight: 700;
     background: #003F7A;
-    text-transform: uppercase;
+   text-transform: uppercase;
     font-size: 12px;
     padding: 8px 16px;
 box-shadow: 0 5px 10px rgb(0 0 0 / 10%), 0 3px 3px rgb(0 0 0 / 20%);
@@ -389,40 +399,18 @@ color:#fff!important;
  background: #003F7A!important;
 }
 
-/*Alinha botão pg de cursos*/
+/*Alinha botão pag de cursos*/
 .page-header-actionss .moodle-actionmenu, .page-header-actionss .singlebutton {
-margin: 15px!important;
+margin: 35px 10px !important;
 }
-
-/*   Teste!!
-flutuação do botão lateral
-
-a#action-menu-toggle-2, 
- .singlebutton button {
-    float: right; 
-    position: fixed;
-    top: 90px;
-    right: 0;
-    z-index: 1;
-}*/
-/*a#action-menu-toggle-1
-{
-   float: right; 
-    position: fixed;
-    top: 240px;
-    right: 0;
-    z-index: 1;
-}
-*/
-
 
 /*alinha o conteúdo*/
 .subcategories {
-    padding: 10px 0;
+    padding: 0 50px;
 }
 /*desgruda o botão*/
 #page-course-index-category .buttons{
-margin: 40px
+margin: 40px;
 }
 /*ajusta quadro de avisos*/
 .coursebox>.info>h3.coursename {
@@ -470,17 +458,7 @@ margin:20px 0;
     border-left: 7px solid #003f7a;
 color:#848586;
 }
-.pl-ra h2{
-border-top: 2px solid #003f7a;
-width:40%;
-margin:30px 0;
-padding-top:10px;
-}
 
-#maincontent+h2{
-padding-top: 10px;
-border-bottom:none;
-}
 
 .pl-link {
     background-color: #f1f1f1;
@@ -503,12 +481,31 @@ margin-left: 0px!important;
     border-bottom: 1px solid #003f7a;
 }
 
-/*botão ferramenta
-.action-menu .dropdown-toggle{
-margin-top: 50px;
-}*/
+/*botão ferramenta*/
+div#action-menu-2-menubar {
+    margin-top: 50px;
+}
+
 
 /*Esconder breadcrumb duplicado embaixo do perfil do usuario*/
 #region-main-box .breadcrumb{
     display: none;
 }
+
+/*Footer*/
+#page-footer a:hover {
+    text-decoration: underline;
+}
+#page-footer ul {
+    padding-inline-start: 0px;
+    list-style: none;
+}
+#page-footer ul li {
+padding: 5px 0;
+}
+.footer-bottom {
+  background-image: url(//10.0.2.121/moodle/pluginfile.php/1/theme_remui/logo/1622227037/logotipo.png);
+  background-repeat: no-repeat;
+  margin: 0 40px !important;
+}
+
