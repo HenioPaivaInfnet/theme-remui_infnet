@@ -3,10 +3,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#727272;}
-	.st1{fill:#FFFFFF;}
+	.st1{fill:#162FB6;}
 </style>
-<circle class="st0" cx="50.1" cy="50.5" r="48.4"/>
+
 <circle class="st1" cx="57.2" cy="36.4" r="4"/>
 <path class="st1" d="M76.6,31.1H73v-3.5c0-0.8-0.6-1.4-1.4-1.4H23.2c-0.8,0-1.4,0.6-1.4,1.4V67c0,0.8,0.6,1.4,1.4,1.4h3.6v3.5
 	c0,0.8,0.6,1.4,1.4,1.4h48.4c0.8,0,1.4-0.6,1.4-1.4V32.5C78,31.8,77.4,31.1,76.6,31.1z M24.6,29h45.6v27.6l-13-12
