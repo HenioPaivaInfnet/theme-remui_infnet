@@ -1,0 +1,492 @@
+.license-notice {display: none;}
+
+/* Generico */
+*:focus {
+  outline: 0 !important;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+html,
+body {
+  height: 100%;
+  color: #000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: normal;
+  background: #ECEFF1;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  color: #3a4d56; /*olhar essa cor*/
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: #3b3b3d;
+}
+
+/*header*/
+
+/*Ajusta o Header*/
+header#page-header .card-body {
+    margin: -20px  -20px ;
+    -webkit-box-shadow: 0 8px 10px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
+}
+.disciplina-fullname{
+color: #3a4d56;
+}
+h3.page-title {
+    font-size: 42px;
+    line-height: 1.2em;
+    margin-left: 20px;
+padding: 10px 0;
+}
+/*breadcrumb*/
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "►";
+}
+.breadcrumb {
+padding: 0;
+    margin-left: 22px;
+    margin-bottom: 0px;
+    line-height: 1.3em;
+}
+.breadcrumb-item a {
+color: #7f8082;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/*Links*/
+a {
+  color: #3b3b3d;
+font-weight: 400;
+}
+
+a:hover, a:focus {
+  color: #162FB6;
+text-decoration:none;
+}
+/*imagem da logo*/
+.navbar .navbar-brand-logo {
+    padding: 5px 0;
+    width: auto;
+}
+
+/*links das etapas*/
+.section .activity .activityinstance>a{
+color: #162FB6; //#8d8dfb;
+font-weight: 500;
+}
+.section .activity .activityinstance>a:hover{
+color: #00B8D4;
+text-decoration: underline;
+}
+
+/*Fim do genérico*/
+
+/*geral*/
+.container {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/*box/container? da região principal (-20px para subir o box conteúdo) acho que não seja necessário
+#region-main {
+    position: relative;
+    margin-top: -20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}*/
+
+/*ajusta o tamanho dos blocos header e content */
+.card-body {
+background:#fff; 
+/*sem essa cor a cor
+#region-main div[role="main"] assume?*/
+/*-webkit-box-shadow: 0 8px 10px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);*/
+}
+
+/*Ajusta o box para preencher toda a página*/
+#page #region-main>.card, #page #region-main>.groupinfobox, #page .userprofile .profile_tree #region-main>section, .userprofile .profile_tree #page #region-main>section{
+    margin:  -30px -20px;
+padding: 0 20px;
+}
+
+/*desce o conteúdo que estava subindo o header*/
+#page #region-main {
+  padding: 30px 20px;
+margin-top: 40px;
+}
+
+
+/*determina o tamanho do box do conteúdo do curso, padding de 20px para desgrudar o bloco cinza das laterais, desalinhou os textos com o "enrolled students" */
+#region-main div[role="main"] {
+    padding: 0 20px;
+}
+
+/*Sobe todo o box do conteúdo*/
+.pagelayout-course #region-main {
+padding:25px 0 !important;
+margin-top: -10px;
+position:relative;
+}
+
+/*posiciona o box do conteúdo da seção, (-30px para subir o  box )*/
+.course-content {
+  margin-top: -20px;
+}
+
+/*tira o estilo da lista, é necessário?*/
+.course-content ul.topics {
+   margin: 0px;
+    list-style: none;
+}
+
+/*borda inferior do box das etapas */
+.course-content ul li.section.main {
+    border-bottom: 1px solid #ddd;
+margin: 0;
+}
+
+/*estilo sombreado do box das etapas  o arredondamento das bordas é na classe .rounded*/
+.course-content ul.topics li.section {
+    position: relative; /*esse position ajusta as imagens no topo de cada li no tema frank*/
+    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+padding-top: 332px;
+}
+
+/*muda cor do box da introdução etapas*/
+.pagelayout-course #section-0{
+background-color: #fff!important;
+}
+
+/*muda a cor do box das etapas*/
+.pagelayout-course .course-content .section.main {
+background: #fff !important;
+    margin-bottom: 32px;
+    position: relative; /*testar se resolve o problema das imagens*/
+}
+
+/*Estilo do conteúdo*/
+
+/*Espaço entre as linhas do conteúdo*/
+li {
+    line-height: 1.5rem;
+}
+
+/*Alinhamento do conteúdo*/
+.course-content ul.topics li.section .content, .course-content ul.weeks li.section .content{
+   margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
+}
+/*alinhar o box da curadoria com os outros conteúdos*/
+.pl-curadoria {
+padding: 32px 50px 24px 65px;
+}
+
+/*tag*/
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.pagelayout-course .course-content .sectionname {
+    font-size: 12px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #fff !important;
+    background-color: #003f7acc;
+  display: inline-block;
+    padding: 0 0.4em;
+    border-radius: 2px;
+   position: absolute;
+    top: 16px;
+    z-index: 10;
+    left: -17px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 25%), 0 8px 15px rgb(0 0 0 / 22%);
+}
+.pagelayout-course .course-content .sectionname a {
+color: #fff!important;
+font-weight:700;
+}
+
+/*box do conteúdo*/
+.course-content ul.topics li.section .summary {
+    margin-right: 25px;
+margin-left:25px;
+}
+
+/*tirar barra de rolagem*/
+.no-overflow {
+    overflow: initial;
+padding-bottom: 1px;
+}
+
+h1 {
+    margin: 1px 0;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 2.5rem;
+font-size:38.5px;
+}
+
+.topics li.section .content>div>div>h1+p>img {
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    vertical-align: middle;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.section .content .summary h1+p {
+border-bottom: none;
+   /* border-bottom: 4px solid #162fb6;*/
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow: hidden;
+}
+.course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
+padding-top: 332px;
+}
+
+/*deixar a img  das etapas em todo o conteúdo*/
+.summary>div>p>img {
+object-fit: fill;
+}
+
+/*Contagem de alunos*/
+.stats-card.d-flex.align-items-center.justify-content-center.px-2.flex-wrap {
+    color: #3a4d56;
+}
+
+/*Bloco de competências*/
+.modtype_label .pl-competencias.abertura{
+  margin-top: -22px;
+}
+
+.modtype_label .pl-competencias {
+    min-width: 100%;
+    background-color: #eceff1;
+    padding: 25px 50px 5px 70px;
+    margin-left: -99px;
+    margin-right: -103px;
+}
+
+/*Página dos cursos das Escolas*/
+.generalbox.info h1+p>img{
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  vertical-align: middle;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+#page-course-index-category .generalbox.info {
+    border: none;
+    padding: 30px
+}
+/*desce o conteúdo da árvore para imagem não esconder*/
+.categorypicker+.box.generalbox.info>.no-overflow {
+    margin-top: 300px;
+}
+/*esconde o campo de busca dos cursos*/
+#page-course-index-category .categorypicker, #coursesearch {
+  display: none;
+  visibility: hidden;
+}
+
+/*Posiciona os elementos abaixo da img*/
+.generalbox.info h1+p {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/*preenche toda a tela do box de conteúdo com*/
+#page-site-index #region-main, #page-course-index-category #region-main, #page-course-index #region-main, #page-admin-index #region-main, #page-course-view-site #region-main, #page-blog-index #region-main, #page-badges-view #region-main, #page-tag-search #region-main, #page-grade-report-grader-index #region-main, #page-grade-report-history-index #region-main, #page-grade-report-outcomes-index #region-main, #page-grade-report-overview-index #region-main, #page-grade-report-singleview-index #region-main, #page-grade-report-user-index #region-main, #page-grade-edit-tree-index #region-main, #page-grade-edit-settings-index #region-main, #page-grade-report-grader-preferences #region-main, #page-grade-edit-letter-index #region-main, #page-grade-edit-outcome-course #region-main, #page-grade-edit-scale-index #region-main, #page-course-edit #region-main, #page-enrol-users #region-main, #page-enrol-instances #region-main, #page-enrol-manual-edit #region-main, #page-group-index #region-main, #page-admin-roles-permissions #region-main, #page-admin-roles-check #region-main, #page-enrol-otherusers #region-main, #page-enrol-manual-unenrolself #region-main, #page-filter-manage #region-main, #page-report-log-index #region-main, #page-report-loglive-index #region-main, #page-report-outline-index #region-main, #page-report-participation-index #region-main, #page-course-reset #region-main, #page-question-edit #region-main, #page-question-category #region-main, #page-question-import #region-main, #page-question-export #region-main, #page-admin-registration-register #region-main, #page-admin-setting-optionalsubsystems #region-main, #page-admin-user #region-main, #page-admin-user-user_bulk #region-main, #page-admin-user-editadvanced #region-main, #page-admin-setting-userdefaultpreferences #region-main, #page-admin-user-profile-index #region-main, #page-admin-cohort-index #region-main, #page-admin-tool-uploaduser-index #region-main, #page-admin-tool-uploaduser-picture #region-main, #page-admin-setting-userpolicies #region-main, #page-admin-roles-admins #region-main, #page-admin-roles-manage #region-main, #page-admin-roles-assign #region-main, #page-admin-tool-capability-index #region-main, #page-admin-tool-unsuproles-index #region-main, #page-course-management #region-main, #page-course-editcategory #region-main, #page-backup-restorefile #region-main, #page-admin-setting-coursesettings #region-main, #page-admin-setting-courserequest #region-main, #page-admin-setting-backupgeneralsettings #region-main, #page-admin-setting-importgeneralsettings #region-main, #page-admin-setting-automated #region-main, #page-admin-tool-uploadcourse-index #region-main, #page-admin-local-autocompetencygrade-consistencycheck #region-main {
+    padding:  10px 0;
+}
+
+/*Ajusta o "expandir tudo"*/
+.collapsible-actions {
+    padding: 20px 50px;
+
+}
+/*Página dos cursos*/
+div#yui_3_17_2_1_1621869126661_36 {
+    padding: 0 50px;
+}
+/*separadores*/
+.course_category_tree .category {
+    border-bottom: 1px solid #ddd;
+}
+
+/*botão*/
+
+.btn.btn-secondary, .btn.btn-sm, .action-menu .dropdown-toggle {
+border:none;
+    color: #fff!important;
+    font-weight: 700;
+    background: #003F7A;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 8px 16px;
+box-shadow: 0 5px 10px rgb(0 0 0 / 10%), 0 3px 3px rgb(0 0 0 / 20%);
+-moz-box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
+    -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
+ transition: all 0.3s ease-out;
+}
+/*cor do botão de ação, não estava mudando no código geral*/
+.moodle-actionmenu a.dropdown-toggle {
+color:#fff!important;
+}
+.btn.btn-secondary:hover,
+.btn.btn-sm:hover,
+.action-menu .dropdown-toggle:hover {
+    box-shadow: 0 6px 10px rgb(0 0 0 / 19%), 0 8px 10px rgb(0 0 0 / 23%);
+ background: #003F7A!important;
+}
+
+/*Alinha botão pg de cursos*/
+.page-header-actionss .moodle-actionmenu, .page-header-actionss .singlebutton {
+margin: 15px!important;
+}
+
+/*alinha o conteúdo*/
+.subcategories {
+    padding: 10px 0;
+}
+/*desgruda o botão*/
+#page-course-index-category .buttons{
+margin: 40px
+}
+/*ajusta quadro de avisos*/
+.coursebox>.info>h3.coursename {
+margin:0;
+}
+
+/*Página das turmas*/
+/*Tirar o ícone de link*/
+.coursebox>.info>.coursename a{
+background-image:none;
+padding-left:10px;
+}
+/*estica a parte inferior do box branco na parte*/
+div#region-main-box {
+    margin-bottom: -20px;
+}
+
+/*Página dos blocos*/
+/*retira background que está como separador*/
+.courses .coursebox.even{
+background:none;
+}
+/*separador*/
+.coursebox {
+    border-bottom: 1px solid #ddd;
+    margin-top:15px;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+/*retira espaçãmento dos blocos*/
+.coursebox .content .customfields-container {
+margin: 0;
+}
+
+/*Roteiro de aprendizagem*/
+/*Framework*/
+.pl-ra h1 {
+    font-weight: 400;
+    font-size: 36px;
+    padding: 10px;
+margin:20px 0;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    border-left: 7px solid #003f7a;
+color:#848586;
+}
+.pl-ra h2{
+border-top: 2px solid #003f7a;
+width:40%;
+margin:30px 0;
+padding-top:10px;
+}
+
+#maincontent+h2{
+padding-top: 10px;
+border-bottom:none;
+}
+
+.pl-link {
+    background-color: #f1f1f1;
+    border-left: 30px solid #003f7a;
+}
+
+.pl-resource-fundamental span{
+margin: -8px -16px -8px 16px;
+padding: 8px 16px 8px 16px;
+}
+
+.pl-resource-fundamental {
+padding: 8px 16px 8px 15px;
+margin-left: 0px!important;
+}
+
+/*cor citação*/
+.pl-hl{
+    border-top: 1px solid #003f7a;
+    border-bottom: 1px solid #003f7a;
+}
+
+/*botão ferramenta
+.action-menu .dropdown-toggle{
+margin-top: 50px;
+}*/
+
+/*Esconder breadcrumb duplicado embaixo do perfil do usuario*/
+#region-main-box .breadcrumb{
+    display: none;
+}

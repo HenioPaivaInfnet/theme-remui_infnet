@@ -173,6 +173,35 @@ tr:nth-child(even) {
 
 /*Altera aparecias relacionadas ao label de competencias*/
 /*FALTA IMPLEMENTAR!!! */
+.alert {
+  border: 0 none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: none;
+}
+
+.alert-success {
+  color: rgba(255, 255, 255, .87);
+  background-color: #8BC34A !important;
+}
+
+.alert-success a {
+  color: rgba(255, 255, 255, .87);
+}
+
+.alert-danger,
+.alert-error {
+  color: rgba(255, 255, 255, .87);
+  background-color: #F44336 !important;
+  border-color: #F44336;
+}
+
+.alert-danger a,
+.alert-error a {
+  color: rgba(255, 255, 255, .87);
+}
+
 .obg-hl {
   display:none;
   visibility:hidden;
