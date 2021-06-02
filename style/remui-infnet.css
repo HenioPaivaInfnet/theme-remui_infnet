@@ -476,11 +476,13 @@ a:focus {
 /*links das etapas*/
 .section .activity .activityinstance > a {
   color: #162fb6;
-  font-weight: 500;
+
+  text-transform: uppercase;
 }
 .section .activity .activityinstance > a:hover {
-  color: #00b8d4;
-  text-decoration: underline;
+  color: #089CA8;
+  font-weight: 500;
+  //text-decoration: underline;
 }
 
 /*geral*/
@@ -976,10 +978,7 @@ div#action-menu-2-menubar {
 }
 /*Ícones*/
 
-.activity img.activityicon {
-  vertical-align: middle;
-}
 img.activityicon {
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
 }
