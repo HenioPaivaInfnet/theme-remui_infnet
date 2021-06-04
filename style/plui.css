@@ -68,14 +68,14 @@
 }
 
 .pl-ra h1 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 36px;
-  /*margin: 40px -20px 20px -58px;
-  padding: 15px 48px;*/
   padding: 10px;
-  letter-spacing: 1px;
-  border-radius: 3px;
-  border-left: 10px solid #42A5F5;
+  margin: 20px 0;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  border-left: 7px solid #003f7a;
+  color: #848586;
 }
 
 .pl-ra h2 {
@@ -142,8 +142,8 @@
 
 .pl-hl {
   font-size: 21px !important;
-  border-top: 1px solid #2196F3;
-  border-bottom: 1px solid #2196F3;
+  border-top: 1px solid #003f7a;
+  border-bottom: 1px solid #003f7a;
   padding: 40px;
   position: relative;
   text-align: center;
@@ -923,6 +923,35 @@ pl-rec-dt:hover button {
   height: 100%;
 }
 
+/*Vídeos*/
+/* alert terceiros nos videos do roteiro*/
+.caption-terceiros:hover,
+.pl-embed-video:hover + .caption-terceiros {
+  opacity: 1;
+}
+
+.caption-terceiros {
+  margin-top: -30px;
+  font-family: "Roboto", sans-serif;
+  background: #2196f3;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 11px;
+  padding: 8px;
+  line-height: 16px;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  opacity: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.caption-terceiros a {
+  color: rgba(255, 255, 255, 0.87) !important;
+  text-decoration: underline;
+}
+
 /* footnote */
 
 .pl-ra a[rev=footnote],
@@ -1018,8 +1047,8 @@ pl-rec-dt:hover button {
   height: auto;
   position: relative;
   padding: 15px;
-  background-color: #E3F2FD;
-  border-left: 30px solid #42A5F5;
+  background-color: #f1f1f1;
+  border-left: 30px solid #003f7a;
   border-radius: 3px;
   font-size: 16px;
   line-height: 23px;
@@ -1066,7 +1095,7 @@ pl-rec-dt:hover button {
 
 .pl-curadoria {
   margin: 0 -60px;
-  padding: 32px 44px 24px 44px;
+  padding: 32px 50px 24px 65px;
   color: rgba(0,0,0,.87);
   background: #F7DE1F; /*#FFEE58*/
   background: rgb(247,222,31); /* Old browsers */
@@ -1080,6 +1109,58 @@ pl-rec-dt:hover button {
   font-size: 12px !important;
   line-height: 23px !important;
   margin-bottom: 8px !important;
+}
+
+/*Bloco de competências*/
+.modtype_label .pl-competencias.abertura {
+  margin-top: -22px;
+}
+
+.modtype_label .pl-competencias {
+  min-width: 100%;
+  background-color: #eceff1;
+  padding: 25px 50px 5px 70px;
+  margin-left: -99px;
+  margin-right: -103px;
+}
+
+/*Ícones competências*/
+
+.modtype_label .pl-competencias.abertura ul li:before {
+  content: "\f10c";
+}
+.modtype_label .pl-competencias ul li:before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  margin-right: 8px;
+  color: #089ca8;
+}
+
+.modtype_label .pl-competencias > p:before {
+  font-family: "FontAwesome";
+  content: "\f05d";
+  margin-right: 8px;
+  color: #089ca8;
+  position: absolute;
+  margin-left: -24px;
+}
+
+/*Lista das competencias na pagina do curso: Ao final desta disciplina, voce sera capaz de demonstrar as seguintes competencias*/
+.course-content li.section li.activity ul {
+  list-style: none;
+}
+.course-content .summary ul,
+.modtype_label ul {
+  margin: 20px 0px 20px -20px;
+  list-style: circle;
+  padding-left: 40px;
+}
+
+.course-content .summary ul li,
+.modtype_label ul li {
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0px 0px 0px 30px;
 }
 
 /* Plugins */
@@ -1100,8 +1181,8 @@ pl-rec-dt:hover button {
 
 .pl-resource-fundamental {
   background: #FFB300;
-  padding: 8px 16px 8px 55px;
-  margin-left: -55px !important;
+  padding: 8px 16px 8px 15px;
+  margin-left: 0px !important;
   display: inline-block;
   color: rgba(255,255,255,.87);
   border-radius: 3px;
@@ -1111,8 +1192,8 @@ pl-rec-dt:hover button {
 .pl-resource-fundamental span {
   display: inline-block;
   background: #FF9800;
-  margin: -8px -16px -8px -48px;
-  padding: 8px 16px 8px 47px;
+  margin: -8px -16px -8px 16px;
+  padding: 8px 16px 8px 16px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
