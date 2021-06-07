@@ -1,14 +1,13 @@
-#infnet {
-  color: #f0f;
-}
-
-/*Ajuster do Remui*/
+/*AJUSTES DO REMUI*/
 /*Ajuste bloco da barra direita do remui */
 ul {
   padding-inline-start: 15px;
 }
 
 /*Esconder banco de conteudo e arquivo privado*/
+.license-notice {
+  display: none;
+}
 #nav-drawer [data-key="contentbank"] {
   display: none !important;
 }
@@ -18,304 +17,13 @@ ul {
 #label_3_10 {
   display: none;
 }
-
-/*Ajuste do course overview*/
-/*Aparencia do paragrafos dentro dos cursos*/
-.course-content ul.topics li.section .content p,
-.course-content ul.weeks li.section .content p,
-.course-content ul.ctopics li.section.main .content p,
-.course-content ul.ctopics li.tcsection .content p {
-  line-height: 28px;
-  font-size: 17px;
-  margin-bottom: 12px;
-  color: #000;
+/*Contagem de alunos*/
+.stats-card.d-flex.align-items-center.justify-content-center.px-2.flex-wrap {
+  color: #3a4d56;
 }
 
-/*label do tp obrigatorio*/
-.required_assign {
-  background: #f44336;
-  border-radius: 2px;
-  color: #fff;
-  /* display: inline-block;
-  font-size: 10px;*/
-  font-family: arial;
-  font-weight: 300;
-  padding: 0px 5px;
-  text-transform: uppercase;
-}
 
-/*Titulo da disciplina*/
-.page-header-course-code,
-.page-header-period-code {
-  font-size: 1.2rem;
-  margin-right: 16px;
-  font-weight: 300;
-}
-
-.disciplina-fullname {
-  font-size: 2.5rem;
-  clear: both;
-  display: block;
-  font-weight: 400;
-}
-
-/*Label da etapa da seccao do curso*/
-.pagelayout-course .course-content .sectionname {
-  font-size: 12px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #fff !important;
-  background-color: #2455b6de;
-  display: inline-block;
-  padding: 0 16px;
-  border-radius: 2px;
-  position: absolute;
-  width: 110px;
-  top: 16px;
-  z-index: 10;
-  left: -17px;
-  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
-}
-.pagelayout-course .course-content .sectionname a {
-  color: #fff !important;
-  font-weight: 700;
-}
-
-/*esconder botao que possiblita esconder o conteudo da seccao*/
-.pagelayout-course .course-content .toggle-section {
-  display: none;
-}
-
-/*Capa do livro das pos live*/
-.pl-row .capa {
-  min-width: 150px;
-}
-.capa img {
-  width: 100%;
-  border: #ddd solid 1px !important;
-}
-
-/*estilo do h2 ROTEIRO DE APRENDIZAGEM*/
-#maincontent + h2 {
-  font-size: 14px;
-  margin: 0 0 32px 0;
-  text-transform: uppercase;
-  color: #888;
-  letter-spacing: 1px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-/*Estilo da tabela no roteiro(altera a aparencia no titulo de outras paginas)*/
-table {
-  width: 100%;
-}
-
-/*Altera aparencia de tabelas por todo Moodle*/
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-/*Altera aparecias relacionadas ao label de competencias*/
-/*FALTA IMPLEMENTAR!!! */
-.alert {
-  border: 0 none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-shadow: none;
-}
-
-.alert-success {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #8bc34a !important;
-}
-
-.alert-success a {
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.alert-danger,
-.alert-error {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #f44336 !important;
-  border-color: #f44336;
-}
-
-.alert-danger a,
-.alert-error a {
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.obg-hl {
-  display: none;
-  visibility: hidden;
-  background: #f44336;
-  border-radius: 2px;
-  color: #fff;
-  display: inline-block;
-  font-size: 10px;
-  font-family: arial;
-  font-weight: 300;
-  padding: 0px 5px;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-}
-
-/*Competencias */
-.comp {
-  background: #607d8b;
-  border-radius: 2px;
-  color: #fff;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 7px 9px;
-  display: block;
-  margin: auto -8px 8px -8px;
-}
-.gradingform_rubric .criterion .description {
-  font-weight: 600;
-  color: black;
-}
-
-/* TP projeto de bloco rubrica cumulativas*/
-.tpn {
-  display: inline-block;
-  font-size: 10px;
-  font-family: arial;
-  font-weight: 300;
-  padding: 8px;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-.tpn + .comp {
-  margin-top: 16px;
-}
-
-.tpn.tp1 {
-  background: #f44336;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.tpn.tp2 {
-  background: #e91e63;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.tpn.tp3 {
-  background: #9c27b0;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.tpn.tp4 {
-  background: #673ab7;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.tpn.tp5 {
-  background: #3f51b5;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.tpn.tp6 {
-  background: #2196f3;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.tpn.tp7 {
-  background: #00bcd4;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.tpn.tp8 {
-  background: #009688;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.tpn.tp9 {
-  background: #4caf50;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.tpn.tp10 {
-  background: #8bc34a;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-/*Label das compentecias no relatorio */
-.label.ND {
-  background-color: #f44336;
-  font-size: 16px;
-  padding: 6px 8px;
-}
-.label.DML,
-.label.DL,
-.label.D {
-  background-color: #8bc34a;
-  font-size: 16px;
-  padding: 6px 8px;
-}
-.tag-info.ND {
-  background-color: #f44336;
-}
-
-.tag.Sim,
-.tag-info.D,
-.tag-info.DL,
-.tag-info.DML {
-  background-color: #8bc34a;
-}
-
-/*Icone da atividade no historico de avaliação da competência*/
-.border-bottom img {
-  width: 30px;
-  height: auto;
-}
-
-/*aparencia dos botoes das Competências da disciplina por estudante*/
-.competency-idnumber .bigfoot-footnote__button {
-  background-color: #fff;
-}
-
-/*Espaçamento vertical no "popup" da distribuição de competencias*/
-.user-competency-full-info .border-bottom {
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid #ccc;
-}
-
-/*Card do login*/
-#page-login-index .loginform,
-#page-login-index .signupform,
-#page-login-signup .loginform,
-#page-login-signup .signupform {
-  background-color: #20292f46;
-}
-
-.loginform .card,
-.loginform .card-body {
-  background-color: #20292f46 /*#20292f*/;
-}
-
-.loginform h3 {
-  color: #fff;
-}
-
-.checkbox-custom label {
-  color: #fff;
-}
-
-/*Renata customizer*/
-
-.license-notice {
-  display: none;
-}
-
-/* Generico */
+/*---AJUSTES GENERICOS---*/
 *:focus {
   outline: 0 !important;
 }
@@ -346,31 +54,52 @@ h2 {
   color: #3a4d56;
 }
 
+h1 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 2.5rem;
+  font-size: 38.5px;
+}
+
 h3,
 h4 {
   font-weight: 400;
   color: #01172b;
 }
 
-/*header*/
+/*Links*/
+a {
+  color: #3b3b3d;
+  font-weight: 400;
+}
 
-/*Ajusta o Header*/
-header#page-header .card-body {
-  margin: -20px -20px;
-  -webkit-box-shadow: 0 8px 10px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
+a:hover,
+a:focus {
+  color: #162fb6;
+  text-decoration: none;
 }
-.disciplina-fullname {
-  color: #3a4d56;
+
+/*Espaço entre as linhas do conteúdo*/
+li {
+  line-height: 1.5rem;
 }
-h3.page-title {
-  font-size: 42px;
-  line-height: 1.2em;
-  margin-left: 20px;
-  padding: 30px 0;
+
+/*Estilo da tabela no roteiro(altera a aparencia no titulo de outras paginas)*/
+table {
+  width: 100%;
 }
+
+/*Altera aparencia de tabelas por todo Moodle*/
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/*imagem da logo*/
+.navbar .navbar-brand-logo {
+  padding: 5px 0;
+  width: auto;
+}
+
 /*breadcrumb*/
 .breadcrumb-item + .breadcrumb-item::before {
   content: "►";
@@ -386,37 +115,68 @@ h3.page-title {
   font-weight: 400;
   font-size: 13px;
 }
-
-/*Links*/
-a {
-  color: #3b3b3d;
-  font-weight: 400;
+/*Esconder breadcrumb duplicado embaixo do perfil do usuario*/
+#region-main-box .breadcrumb {
+  display: none;
 }
 
-a:hover,
-a:focus {
-  color: #162fb6;
-  text-decoration: none;
-}
-/*imagem da logo*/
-.navbar .navbar-brand-logo {
-  padding: 5px 0;
-  width: auto;
+h3.page-title {
+  font-size: 42px;
+  line-height: 1.2em;
+  margin-left: 20px;
+  padding: 30px 0;
 }
 
-/*links das etapas*/
-.section .activity .activityinstance > a {
-  color: #162fb6;
+.hidden {
+  display: none;
+  visibility: hidden;
+}
 
+/*Retira espaçamento do carroussel e do header*/
+.home-sections {
+  margin: -50px 0;
+}
+
+/*botão*/
+.btn.btn-secondary,
+.btn-primary,
+.btn.btn-sm,
+.action-menu .dropdown-toggle {
+  border: none;
+  color: #fff !important;
+  font-weight: 700;
+  background: #003f7a;
   text-transform: uppercase;
+  font-size: 12px;
+  padding: 8px 16px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%), 0 3px 3px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
+  transition: all 0.3s ease-out;
 }
-.section .activity .activityinstance > a:hover {
-  color: #089CA8;
-  font-weight: 500;
-  text-decoration: underline;
+/*cor do botão de ação, não estava mudando no código geral*/
+.moodle-actionmenu a.dropdown-toggle {
+  color: #fff !important;
+}
+.btn.btn-secondary:hover,
+.btn-primary:hover,
+.btn.btn-sm:hover,
+.action-menu .dropdown-toggle:hover {
+  box-shadow: 0 6px 10px rgb(0 0 0 / 19%), 0 8px 10px rgb(0 0 0 / 23%);
+  background: #003f7a !important;
 }
 
-/*geral*/
+/*---AJUSTES DE CONTAINERS---*/
+/*Ajusta o Header*/
+header#page-header .card-body {
+  margin: -20px -20px;
+  -webkit-box-shadow: 0 8px 10px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 5px 15px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
+}
+
 .container {
   max-width: 1680px;
   margin: 0 auto;
@@ -474,138 +234,34 @@ a:focus {
   margin: 0;
 }
 
-/*estilo sombreado do box das etapas  o arredondamento das bordas é na classe .rounded*/
-.course-content ul.topics li.section {
-  position: relative; /*esse position ajusta as imagens no topo de cada li no tema frank*/
-  -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-  padding-top: 332px;
+
+/*---AJUSTES DE PAGINA---*/
+/*Pagina de login*/
+#page-login-index .loginform,
+#page-login-index .signupform,
+#page-login-signup .loginform,
+#page-login-signup .signupform {
+  background-color: #20292f46;
 }
 
-/*muda cor do box da introdução etapas*/
-.pagelayout-course #section-0 {
-  background-color: #fff !important;
+.loginform .card,
+.loginform .card-body {
+  background-color: #20292f46;
+}
+.loginform .card {
+  height: 100%;
+}
+.loginform h3,
+.loginform a,
+.loginform p {
+  color: #fff;
 }
 
-/*muda a cor do box das etapas*/
-.pagelayout-course .course-content .section.main {
-  background: #fff !important;
-  margin-bottom: 32px;
-  position: relative; /*testar se resolve o problema das imagens*/
+.checkbox-custom label {
+  color: #fff;
 }
 
-/*Estilo do conteúdo*/
-
-/*Home-aluno*/
-
-/*Retira espaçamento do carroussel e do header*/
-.home-sections {
-  margin: -50px 0;
-}
-
-/*Espaço entre as linhas do conteúdo*/
-li {
-  line-height: 1.5rem;
-}
-
-/*Alinhamento do conteúdo*/
-.course-content ul.topics li.section .content,
-.course-content ul.weeks li.section .content {
-  margin-right: 20px;
-  margin-left: 20px;
-  padding: 0;
-}
-
-/*tag*/
-
-.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-.pagelayout-course .course-content .sectionname {
-  font-size: 12px;
-  line-height: 32px;
-  text-transform: uppercase;
-  color: #fff !important;
-  background-color: #003f7acc;
-  display: inline-block;
-  padding: 0 0.4em;
-  border-radius: 2px;
-  position: absolute;
-  top: 16px;
-  z-index: 10;
-  left: -17px;
-  box-shadow: 0 10px 20px rgb(0 0 0 / 25%), 0 8px 15px rgb(0 0 0 / 22%);
-}
-.pagelayout-course .course-content .sectionname a {
-  color: #fff !important;
-  font-weight: 700;
-}
-
-/*box do conteúdo*/
-.course-content ul.topics li.section .summary {
-  margin-right: 25px;
-  margin-left: 25px;
-}
-
-/*tirar barra de rolagem*/
-.no-overflow {
-  overflow: initial;
-  padding-bottom: 1px;
-}
-
-h1 {
-  margin: 10px 0;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 2.5rem;
-  font-size: 38.5px;
-}
-
-.topics li.section .content > div > div > h1 + p > img {
-  width: auto;
-  min-height: 100%;
-  min-width: 100%;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  vertical-align: middle;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.section .content .summary h1 + p {
-  border-bottom: none;
-  /* border-bottom: 4px solid #162fb6;*/
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  top: 0;
-  left: 0;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  overflow: hidden;
-}
-.course-content ul.topics li.section .content,
-.course-content ul.weeks li.section .content {
-  padding-top: 332px;
-}
-
-/*deixar a img  das etapas em todo o conteúdo*/
-.summary > div > p > img {
-  object-fit: fill;
-}
-
-/*Contagem de alunos*/
-.stats-card.d-flex.align-items-center.justify-content-center.px-2.flex-wrap {
-  color: #3a4d56;
-}
-
-/*Página dos cursos das Escolas*/
+/*Página de categorias*/
 .generalbox.info h1 + p > img {
   height: auto;
   width: auto;
@@ -619,7 +275,6 @@ h1 {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
 #page-course-index-category .generalbox.info {
   border: none;
   padding: 30px;
@@ -633,7 +288,6 @@ h1 {
 #coursesearch {
 
 }
-
 /*Posiciona os elementos abaixo da img*/
 .generalbox.info h1 + p {
   position: absolute;
@@ -643,7 +297,6 @@ h1 {
   left: 0;
   overflow: hidden;
 }
-
 /*preenche toda a tela do box de conteúdo com*/
 #page-site-index #region-main,
 #page-course-index-category #region-main,
@@ -727,38 +380,6 @@ h1 {
 .course_category_tree .category {
   border-bottom: 1px solid #ddd;
 }
-
-/*botão*/
-
-.btn.btn-secondary,
-.btn-primary,
-.btn.btn-sm,
-.action-menu .dropdown-toggle {
-  border: none;
-  color: #fff !important;
-  font-weight: 700;
-  background: #003f7a;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding: 8px 16px;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 10%), 0 3px 3px rgb(0 0 0 / 20%);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23);
-  -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
-  transition: all 0.3s ease-out;
-}
-/*cor do botão de ação, não estava mudando no código geral*/
-.moodle-actionmenu a.dropdown-toggle {
-  color: #fff !important;
-}
-.btn.btn-secondary:hover,
-.btn-primary:hover,
-.btn.btn-sm:hover,
-.action-menu .dropdown-toggle:hover {
-  box-shadow: 0 6px 10px rgb(0 0 0 / 19%), 0 8px 10px rgb(0 0 0 / 23%);
-  background: #003f7a !important;
-}
-
 /*Alinha botão pag de cursos*/
 .page-header-actionss .moodle-actionmenu,
 .page-header-actionss .singlebutton {
@@ -807,17 +428,362 @@ div#region-main-box {
   margin: 0;
 }
 
+/*---AJUSE DO COURSE OVERVIEW---*/
 /*botão ferramenta*/
 div#action-menu-2-menubar {
   margin-top: 50px;
 }
 
-/*Esconder breadcrumb duplicado embaixo do perfil do usuario*/
-#region-main-box .breadcrumb {
+/*Ícones do Roteiro*/
+img.activityicon {
+  height: 25px;
+  width: 25px;
+}
+/*links das etapas*/
+.section .activity .activityinstance > a {
+  color: #162fb6;
+
+  text-transform: uppercase;
+}
+.section .activity .activityinstance > a:hover {
+  color: #089CA8;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/*Aparencia do paragrafos dentro dos cursos*/
+.course-content ul.topics li.section .content p,
+.course-content ul.weeks li.section .content p,
+.course-content ul.ctopics li.section.main .content p,
+.course-content ul.ctopics li.tcsection .content p {
+  line-height: 28px;
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+/*label do tp obrigatorio*/
+.required_assign {
+  background: #f44336;
+  border-radius: 2px;
+  color: #fff;
+  font-family: arial;
+  font-weight: 300;
+  padding: 0px 5px;
+  text-transform: uppercase;
+}
+
+/*Titulo da disciplina*/
+.page-header-course-code,
+.page-header-period-code {
+  font-size: 1.2rem;
+  margin-right: 16px;
+  font-weight: 300;
+}
+
+.disciplina-fullname {
+  font-size: 2.5rem;
+  clear: both;
+  display: block;
+  font-weight: 400;
+  color: #3a4d56;
+}
+
+/*esconder botao que possiblita esconder o conteudo da seccao*/
+.pagelayout-course .course-content .toggle-section {
   display: none;
 }
 
-/*Footer*/
+/*Ajuste Capa do livro das pos live*/
+.pl-row .capa {
+  min-width: 150px;
+}
+.capa img {
+  width: 100%;
+  border: #ddd solid 1px !important;
+}
+
+/*estilo do h2 ROTEIRO DE APRENDIZAGEM*/
+#maincontent + h2 {
+  font-size: 14px;
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/*estilo sombreado do box das etapas  o arredondamento das bordas é na classe .rounded*/
+.course-content ul.topics li.section {
+  position: relative; /*esse position ajusta as imagens no topo de cada li no tema frank*/
+  -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  padding-top: 332px;
+}
+
+/*muda cor do box da introdução etapas*/
+.pagelayout-course #section-0 {
+  background-color: #fff !important;
+}
+
+/*muda a cor do box das etapas*/
+.pagelayout-course .course-content .section.main {
+  background: #fff !important;
+  margin-bottom: 32px;
+  position: relative; /*testar se resolve o problema das imagens*/
+}
+
+/*Alinhamento do conteúdo*/
+.course-content ul.topics li.section .content,
+.course-content ul.weeks li.section .content {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.pagelayout-course .course-content .sectionname {
+  font-size: 12px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #fff !important;
+  background-color: #003f7acc;
+  display: inline-block;
+  padding: 0 0.4em;
+  border-radius: 2px;
+  position: absolute;
+  top: 16px;
+  z-index: 10;
+  left: -17px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 25%), 0 8px 15px rgb(0 0 0 / 22%);
+}
+.pagelayout-course .course-content .sectionname a {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+/*box do conteúdo*/
+.course-content ul.topics li.section .summary {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+/*tirar barra de rolagem*/
+.no-overflow {
+  overflow: initial;
+  padding-bottom: 1px;
+}
+
+.topics li.section .content > div > div > h1 + p > img {
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  vertical-align: middle;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.section .content .summary h1 + p {
+  border-bottom: none;
+  /* border-bottom: 4px solid #162fb6;*/
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  overflow: hidden;
+}
+.course-content ul.topics li.section .content,
+.course-content ul.weeks li.section .content {
+  padding-top: 332px;
+}
+
+/*deixar a img  das etapas em todo o conteúdo*/
+.summary > div > p > img {
+  object-fit: fill;
+}
+
+/*---APARENCIAS DAS VISUALIZAÇÂO DE COMPETENCIAS---*/
+.alert {
+  border: 0 none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: none;
+}
+
+.alert-success {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #8bc34a !important;
+}
+
+.alert-success a {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.alert-danger,
+.alert-error {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #f44336 !important;
+  border-color: #f44336;
+}
+
+.alert-danger a,
+.alert-error a {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/*FALTA IMPLEMENTAR!!! */
+.obg-hl {
+  display: none;
+  visibility: hidden;
+  background: #f44336;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  font-family: arial;
+  font-weight: 300;
+  padding: 0px 5px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+/*Descrição de competencias no TP e Assesigment*/
+.comp {
+  background: #607d8b;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 9px;
+  display: block;
+  margin: auto -8px 8px -8px;
+}
+.gradingform_rubric .criterion .description {
+  font-weight: 600;
+  color: black;
+}
+
+/*Label do TP na descrição das competencias*/
+.tpn {
+  display: inline-block;
+  font-size: 10px;
+  font-family: arial;
+  font-weight: 300;
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.tpn + .comp {
+  margin-top: 16px;
+}
+
+.tpn.tp1 {
+  background: #f44336;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.tpn.tp2 {
+  background: #e91e63;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.tpn.tp3 {
+  background: #9c27b0;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.tpn.tp4 {
+  background: #673ab7;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.tpn.tp5 {
+  background: #3f51b5;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.tpn.tp6 {
+  background: #2196f3;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.tpn.tp7 {
+  background: #00bcd4;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.tpn.tp8 {
+  background: #009688;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.tpn.tp9 {
+  background: #4caf50;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.tpn.tp10 {
+  background: #8bc34a;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/*Label das compentecias no relatorio pop up| report/coursecompetencies*/
+.label.ND {
+  background-color: #f44336;
+  font-size: 16px;
+  padding: 6px 8px;
+}
+.label.DML,
+.label.DL,
+.label.D {
+  background-color: #8bc34a;
+  font-size: 16px;
+  padding: 6px 8px;
+}
+.tag-info.ND {
+  background-color: #f44336;
+}
+
+.tag.Sim,
+.tag-info.D,
+.tag-info.DL,
+.tag-info.DML {
+  background-color: #8bc34a;
+}
+
+/*Icone da atividade no historico de avaliação da competência*/
+.border-bottom img {
+  width: 30px;
+  height: auto;
+}
+
+/*aparencia dos botoes das Competências da disciplina por estudante*/
+.competency-idnumber .bigfoot-footnote__button {
+  background-color: #fff;
+}
+
+/*Espaçamento vertical no "popup" da distribuição de competencias*/
+.user-competency-full-info .border-bottom {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+/*---Footer---*/
 #page-footer a:hover {
   text-decoration: underline;
 }
@@ -841,10 +807,4 @@ div#action-menu-2-menubar {
 #page-footer .container {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding-bottom: 10px;
-}
-/*Ícones*/
-
-img.activityicon {
-  height: 25px;
-  width: 25px;
 }
