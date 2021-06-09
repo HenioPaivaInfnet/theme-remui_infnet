@@ -52,20 +52,16 @@ h1,
 h2 {
   font-weight: 400;
   color: #3a4d56;
-}
-
-h1 {
+  line-height: 40px;
   margin: 10px 0;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 2.5rem;
-  font-size: 38.5px;
 }
 
 h3,
 h4 {
   font-weight: 400;
   color: #01172b;
+  line-height: 40px;
+  margin: 10px 0;
 }
 
 /*Links*/
@@ -82,7 +78,7 @@ a:focus {
 
 /*Espaço entre as linhas do conteúdo*/
 li {
-  line-height: 1.5rem;
+  line-height: 20px;
 }
 
 /*Estilo da tabela no roteiro(altera a aparencia no titulo de outras paginas)*/
@@ -257,7 +253,7 @@ header#page-header .card-body {
   color: #fff;
 }
 
-.checkbox-custom label {
+.login .checkbox-custom label {
   color: #fff;
 }
 
@@ -432,7 +428,12 @@ div#region-main-box {
 div#action-menu-2-menubar {
   margin-top: 50px;
 }
-
+.course-content ul.topics h1 {
+  font-size: 36px;
+}
+.course-content ul.topics h3 {
+  font-size: 24px;
+}
 /*Ícones do Roteiro*/
 img.activityicon {
   height: 25px;
@@ -457,7 +458,6 @@ img.activityicon {
 .course-content ul.ctopics li.tcsection .content p {
   line-height: 28px;
   font-size: 17px;
-  margin-bottom: 12px;
   color: #000;
 }
 
@@ -486,6 +486,12 @@ img.activityicon {
   display: block;
   font-weight: 400;
   color: #3a4d56;
+}
+
+/*espaçamento entre links*/
+.section li.activity.modtype_page {
+  padding: 10px 0;
+  margin-bottom: 16px;
 }
 
 /*esconder botao que possiblita esconder o conteudo da seccao*/
@@ -783,11 +789,16 @@ img.activityicon {
 }
 
 /*---Footer---*/
+#page-footer a {
+  color: #FFF;
+}
 #page-footer a:hover {
   text-decoration: underline;
+  color: #FFF;
 }
 #page-footer h4 {
   font-weight: 600 !important;
+  text-transform: uppercase;
 }
 #page-footer ul {
   padding-inline-start: 0px;

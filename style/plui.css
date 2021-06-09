@@ -1106,9 +1106,8 @@ pl-rec-dt:hover button {
 }
 
 .pl-curadoria p {
-  font-size: 12px !important;
+  font-size: 15px !important;
   line-height: 23px !important;
-  margin-bottom: 8px !important;
 }
 
 /*Bloco de competências*/
@@ -1122,6 +1121,10 @@ pl-rec-dt:hover button {
   padding: 25px 50px 5px 70px;
   margin-left: -99px;
   margin-right: -103px;
+}
+.modtype_label .pl-competencias>p {
+  padding-left: 24px;
+  margin-bottom: 8px !important;
 }
 
 /*Ícones competências*/
