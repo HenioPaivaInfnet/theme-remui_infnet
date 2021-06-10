@@ -253,7 +253,7 @@ header#page-header .card-body {
   color: #fff;
 }
 
-.login .checkbox-custom label {
+#page-login-index .checkbox-custom label {
   color: #fff;
 }
 
@@ -442,7 +442,6 @@ img.activityicon {
 /*links das etapas*/
 .section .activity .activityinstance > a {
   color: #162fb6;
-
   text-transform: uppercase;
 }
 .section .activity .activityinstance > a:hover {
@@ -614,6 +613,13 @@ img.activityicon {
 /*deixar a img  das etapas em todo o conteúdo*/
 .summary > div > p > img {
   object-fit: fill;
+}
+
+/*Alinhamento do links das etapas*/
+
+.section .activity .activityinstance>a, .section .activity .contentwithoutlink>a{
+  text-indent: 0;
+  padding-left: 23px;
 }
 
 /*---APARENCIAS DAS VISUALIZAÇÂO DE COMPETENCIAS---*/
