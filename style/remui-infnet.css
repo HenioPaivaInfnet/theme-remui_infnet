@@ -149,7 +149,7 @@ h3.page-title {
   text-transform: uppercase;
   font-size: 12px;
   padding: 8px 16px;
-  box-shadow: 2px 5px 10px 1px #63636347;
+  box-shadow: 2px 5px 10px 1px #21252947;
   -moz-box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.19),
     0 6px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 2px 5px 10px 1px rgb(0 0 0 / 19%), 0 3px 3px rgb(0 0 0 / 23%);
@@ -162,7 +162,8 @@ h3.page-title {
 .btn.btn-secondary:hover,
 .btn-primary:hover,
 .btn.btn-sm:hover,
-.action-menu .dropdown-toggle:hover {
+.action-menu .dropdown-toggle:hover,
+.btn-outline-secondary:hover {
   box-shadow: 6px 6px 12px 1px #21252947;
   background: #003f7a !important;
 }
@@ -296,10 +297,48 @@ footer#page .pageinfo {
 footer#page-footer .site-footer-legal {
   font-size: 10px;
 }
+/*Pagina do SITE*/
+/*Links rápidos*/
+#page-site-index .links-rapidos h4 a {
+  font-size: 13px !important;
+  line-height: 1.5em;
+  font-weight: 500 !important;
+}
+#page-site-index .links-rapidos h4 {
+  margin: 10px 0 0 0;
+}
+#page-site-index .links-rapidos h2 {
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 50px;
+}
+/*tutoriais*/
+#page-site-index .tutoriais h2 {
+  text-transform: uppercase;
+  margin: 10px 0 30px 0;
+}
+
 /*Minhas disciplinas*/
+
+.block .block-cards .course-summaryitem {
+  border: none;
+}
 #page-my-index .block .block-cards .course-summaryitem {
   border-bottom: 1px solid #e4eaec;
   padding: 20px 0 !important;
+}
+#page-my-index #block-region-content h4 {
+  font-size: 1.2rem;
+  color: #8e8f90;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+div#google_image_div {
+  display: none;
+}
+/*Filtro*/
+[data-region="filter"] {
+  padding-bottom: 40px;
 }
 /*Página de categorias*/
 .generalbox.info h1 + p > img {
@@ -728,7 +767,7 @@ img.activityicon {
 .gradingform_rubric .criterion .description {
   font-weight: 600;
   color: black;
-}  
+}
 /*Pontuação que não faz sentido para nossa forma de competencias*/
 .gradingform_rubric .criteria .score {
   display: none;
