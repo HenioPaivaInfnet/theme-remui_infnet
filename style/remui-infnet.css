@@ -14,6 +14,9 @@ ul {
 #nav-drawer [data-key="privatefiles"] {
   display: none !important;
 }
+#nav-drawer [data-key='mycourses'] {
+  display: none!important;
+}
 #label_3_10 {
   display: none;
 }
@@ -137,7 +140,8 @@ h3.page-title {
 .btn.btn-secondary,
 .btn-primary,
 .btn.btn-sm,
-.action-menu .dropdown-toggle {
+.action-menu .dropdown-toggle,
+.btn-outline-secondary {
   border: none;
   color: #fff !important;
   font-weight: 700;
@@ -159,7 +163,7 @@ h3.page-title {
 .btn-primary:hover,
 .btn.btn-sm:hover,
 .action-menu .dropdown-toggle:hover {
-  box-shadow: 6px 6px 12px 1px #79797983;
+  box-shadow: 6px 6px 12px 1px #21252947;
   background: #003f7a !important;
 }
 
@@ -233,6 +237,13 @@ header#page-header .card-body {
 
 /*---AJUSTES DE PAGINA---*/
 /*Pagina de login*/
+#page-login-index .card-block {
+  margin-top: 40px;
+}
+#page-login-index #audima-infnet-container {
+  top: 570px;
+}
+
 #page-login-index .loginform,
 #page-login-index .signupform,
 #page-login-signup .loginform,
@@ -243,20 +254,53 @@ header#page-header .card-body {
 .loginform .card,
 .loginform .card-body {
   background-color: #20292f46;
+  color: #FFF;
 }
 .loginform .card {
   height: 100%;
 }
-.loginform h3,
-.loginform a,
-.loginform p {
+
+#page-login-index .checkbox-custom label,
+#page-login-index h3,
+#page-login-index p {
   color: #fff;
 }
 
-#page-login-index .checkbox-custom label {
-  color: #fff;
-}
 
+#page-login-index .page-brand-info *, #page-login-signup .page-brand-info * {
+  line-height: 12px;
+  padding-top: 12px;
+  margin: 0;
+}
+.loginform h6 {
+  color: #FFF;
+  font-size: 15px;
+}
+#page-login-index footer#page-footer .logininfo, 
+#page-login-index footer#page-footer .homelink, 
+#page-login-index footer#page-footer .tool_dataprivacy, 
+#page-login-index footer#page-footer a, 
+#page-login-index footer#page-footer .performanceinfo, 
+#page-login-index footer#page-footer .logininfo, 
+#page-login-index footer#page-footer .homelink, 
+#page-login-index footer#page-footer .tool_dataprivacy, 
+#page-login-index footer#page .pageinfo,
+footer#page-footer .performanceinfo, 
+footer#page-footer .tool_dataprivacy, 
+footer#page .pageinfo {
+  display: none;
+}
+.site-footer-right a:nth-child(4) {
+  display: none;
+}
+footer#page-footer .site-footer-legal {
+  font-size: 10px;
+}
+/*Minhas disciplinas*/
+#page-my-index .block .block-cards .course-summaryitem {
+  border-bottom: 1px solid #e4eaec;
+  padding: 20px 0 !important;
+}
 /*Página de categorias*/
 .generalbox.info h1 + p > img {
   height: auto;
@@ -385,7 +429,7 @@ header#page-header .card-body {
 .subcategories {
   padding: 0 50px;
 }
-/*desgruda o botão*/
+/*desgruda botão*/
 #page-course-index-category .buttons {
   margin: 40px;
 }
@@ -447,7 +491,6 @@ img.activityicon {
 .section .activity .activityinstance > a:hover {
   color: #089CA8;
   font-weight: 500;
-  text-decoration: underline;
 }
 
 /*Aparencia do paragrafos dentro dos cursos*/
@@ -685,6 +728,10 @@ img.activityicon {
 .gradingform_rubric .criterion .description {
   font-weight: 600;
   color: black;
+}  
+/*Pontuação que não faz sentido para nossa forma de competencias*/
+.gradingform_rubric .criteria .score {
+  display: none;
 }
 
 /*Label do TP na descrição das competencias*/
