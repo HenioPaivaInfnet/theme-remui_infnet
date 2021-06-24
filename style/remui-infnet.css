@@ -20,6 +20,13 @@ ul {
 [data-original-title="Course Archive Page"]{
   display: none!important;
 }
+/*Escondendo icones do Remui*/
+.nav-tabs {
+  border-bottom: 1px solid #e4eaec;
+  display: none;
+}
+
+/*Icones do font awesome*/
 .fa-dashboard:before, .fa-tachometer:before {
   content: "\f212";
   }
