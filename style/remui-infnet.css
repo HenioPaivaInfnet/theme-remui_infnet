@@ -17,14 +17,20 @@ ul {
 #nav-drawer [data-key='mycourses'] {
   display: none!important;
 }
-#label_3_10 {
-  display: none;
+[data-original-title="Course Archive Page"]{
+  display: none!important;
+}
+.fa-dashboard:before, .fa-tachometer:before {
+  content: "\f212";
+  }
+  
+.nav-item .fa-cog:before, .fa-gear:before {
+  content: "\f19d ";
 }
 /*Contagem de alunos*/
 .stats-card.d-flex.align-items-center.justify-content-center.px-2.flex-wrap {
   color: #3a4d56;
 }
-
 
 /*---AJUSTES GENERICOS---*/
 *:focus {
@@ -141,7 +147,8 @@ h3.page-title {
 .btn-primary,
 .btn.btn-sm,
 .action-menu .dropdown-toggle,
-.btn-outline-secondary {
+.btn-outline-secondary, 
+.btn-info{
   border: none;
   color: #fff !important;
   font-weight: 700;
@@ -162,7 +169,8 @@ h3.page-title {
 .btn-primary:hover,
 .btn.btn-sm:hover,
 .action-menu .dropdown-toggle:hover,
-.btn-outline-secondary:hover{
+.btn-outline-secondary:hover,
+.btn-info:hover {
   box-shadow: 6px 6px 12px 1px #21252947;
   background: #003f7a !important;
 }
@@ -287,7 +295,8 @@ header#page-header .card-body {
 #page-login-index footer#page .pageinfo,
 footer#page-footer .performanceinfo, 
 footer#page-footer .tool_dataprivacy, 
-footer#page .pageinfo.loginform {
+footer#page .pageinfo.loginform,
+#page-login-index footer.page-copyright {
   display: none;
 }
 form#login {
@@ -301,19 +310,33 @@ footer#page-footer .site-footer-legal {
 }
 /*Pagina do SITE*/
 /*Links rápidos*/
-#page-site-index .links-rapidos h4 a {
-  font-size: 13px !important;
-  line-height: 1.5em;
+#page-site-index .links-rapidos h4 {
+  font-size: 12px !important;
+  line-height: 18px;
   font-weight: 500 !important;
 }
-#page-site-index .links-rapidos h4 {
-  margin: 10px 0 0 0;
+
+i.links-rapidos-ico {
+  font-size: 35px;
 }
+.links-rapidos{
+  padding: 0 2rem;
+  margin: 0 auto !important;
+  height: 3;
+}
+
 #page-site-index .links-rapidos h2 {
   text-transform: uppercase;
   margin: 0;
   margin-top: 50px;
+  font-size: 20px;
 }
+.separador {
+  border-right: 1px solid #ccc;
+  height: 25em;
+  margin-top: 30px;
+}
+
 /*tutoriais*/
 #page-site-index .tutoriais h2 {
   text-transform: uppercase;
@@ -340,20 +363,23 @@ footer#page-footer .site-footer-legal {
 }
 /*linha do tempo*/
 .block-timeline div[data-region=event-list-item] {
-  padding: 40px 20px 60px!important;
+  padding: 25px 10px!important;
 }
 
 .block_timeline h5 {
   text-transform:uppercase;
   font-weight:600;
 }
-.block_timeline div.event-name-container > h6 {
-  position: absolute;
-  left: 56.7rem;
-}
+
 [data-region="event-list-item"] small:nth-child(3){
-    font-size:18px;
+  font-size:18px;
 }
+
+/*Itens acessados recentemente*/
+.block-recentlyaccesseditems .card-deck {
+  padding: 0 0 20px;
+}
+
 /*Filtro*/
 [data-region="filter"] {
   padding-bottom: 40px;
