@@ -20,11 +20,6 @@ ul {
 [data-original-title="Course Archive Page"]{
   display: none!important;
 }
-/*Escondendo icones do Remui*/
-.nav-tabs {
-  border-bottom: 1px solid #e4eaec;
-  display: none;
-}
 
 /*Icones do font awesome*/
 .fa-dashboard:before, .fa-tachometer:before {
@@ -79,17 +74,22 @@ h4 {
   line-height: 40px;
   margin: 10px 0;
 }
-
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: 400;
+  line-height: 1;
+  color: #999;
+}
 /*Links*/
 a {
-  color: #3b3b3d;
+  color: #0000e7;
   font-weight: 400;
 }
 
 a:hover,
 a:focus {
-  color: #162fb6;
+  color: #003f7a;
   text-decoration: none;
+  font-weight: 600;
 }
 
 /*Espaço entre as linhas do conteúdo*/
@@ -184,6 +184,9 @@ h3.page-title {
 .btn-default:hover {
   color: #FFF!important;
 } 
+.btn.btn-primary {
+  text-transform: uppercase;
+}
 
 /*---AJUSTES DE CONTAINERS---*/
 /*Ajusta o Header*/
@@ -567,8 +570,9 @@ div#region-main-box {
 
 /*---AJUSE DO COURSE OVERVIEW---*/
 /*botão ferramenta*/
-div#action-menu-2-menubar {
-  margin-top: 50px;
+#page-mod-page-view div#action-menu-2-menubar,
+#page-mod-assign-view div#action-menu-2-menubar{
+  margin-top: -50px;
 }
 .course-content ul.topics h1 {
   font-size: 36px;
@@ -828,6 +832,11 @@ img.activityicon {
   color: black;
 }
 
+/*Esconder pontuação nas telas de TP e AT*/
+.gradingform_rubric .criteria .score {
+  display: none;
+}
+
 /*Label do TP na descrição das competencias*/
 .tpn {
   display: inline-block;
@@ -933,6 +942,46 @@ img.activityicon {
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 1px solid #ccc;
+}
+/*Alinhamento do botão editar em avaliação dos tp's*/
+.path-mod-assign .gradingtable .moodle-actionmenu {
+  white-space: nowrap;
+  padding-bottom: 35px;
+}
+/*Correção de TP*/
+/*Dados do user*/
+.path-mod-assign [data-region=user-info] h4 {
+  line-height: 20px;
+}
+.path-mod-assign [data-region=user-info] a>em {
+  font-size: 15px;
+}
+.path-mod-assign [data-region=assignment-info] {
+  line-height: 20px;
+  margin-top: 10px;
+}
+.path-mod-assign [data-region=grade-panel] .fitem.has-popout{
+  padding: 10px;
+}
+.path-mod-assign [data-region=grade-panel] .mform .fitem .felement[data-fieldtype=grading] {
+  padding-left: 0;
+  padding-right: 0;
+}
+#page-mod-assign-grader .gradeform .fcontainer {
+  padding: 0;
+}
+.path-mod-assign [data-region="grade-panel"] .gradingform_rubric .criterion .description {
+  min-width: 200px;
+  padding-bottom: 20px;
+}
+.path-mod-assign [data-region=grade-panel] .has-popout .col-md-3 {
+  display: none !important;
+}
+.path-mod-assign [data-region="grade-panel"] div.submissionstatustable {
+  margin-bottom: 0em;
+}
+.path-mod-assign [data-region=grade-panel] .fitem.row, .path-mod-assign [data-region=grade-panel] fieldset {
+  margin-top: -1em;
 }
 
 /*---Footer---*/
