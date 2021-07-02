@@ -14,19 +14,21 @@ ul {
 #nav-drawer [data-key="privatefiles"] {
   display: none !important;
 }
-#nav-drawer [data-key='mycourses'] {
-  display: none!important;
+#nav-drawer [data-key="mycourses"] {
+  display: none !important;
 }
-[data-original-title="Course Archive Page"]{
-  display: none!important;
+[data-original-title="Course Archive Page"] {
+  display: none !important;
 }
 
 /*Icones do font awesome*/
-.fa-dashboard:before, .fa-tachometer:before {
+.fa-dashboard:before,
+.fa-tachometer:before {
   content: "\f212";
-  }
-  
-.nav-item .fa-cog:before, .fa-gear:before {
+}
+
+.nav-item .fa-cog:before,
+.fa-gear:before {
   content: "\f19d ";
 }
 /*Contagem de alunos*/
@@ -74,7 +76,12 @@ h4 {
   line-height: 40px;
   margin: 10px 0;
 }
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
   font-weight: 400;
   line-height: 1;
   color: #999;
@@ -127,6 +134,12 @@ tr:nth-child(even) {
   font-weight: 400;
   font-size: 13px;
 }
+@media (max-width: 767.98px){
+.breadcrumb:not(:empty) {
+    border: none;
+}
+}
+
 /*Esconder breadcrumb duplicado embaixo do perfil do usuario*/
 #region-main-box .breadcrumb {
   display: none;
@@ -150,12 +163,13 @@ h3.page-title {
 }
 
 /*botão*/
+.btn[data-region="attempt-chooser"],
 .btn.btn-secondary,
 .btn-primary,
 .btn.btn-sm,
 .action-menu .dropdown-toggle,
-.btn-outline-secondary, 
-.btn-info{
+.btn-outline-secondary,
+.btn-info {
   border: none;
   color: #fff !important;
   font-weight: 700;
@@ -172,6 +186,7 @@ h3.page-title {
 .moodle-actionmenu a.dropdown-toggle {
   color: #fff !important;
 }
+.btn[data-region="attempt-chooser"]:hover,
 .btn.btn-secondary:hover,
 .btn-primary:hover,
 .btn.btn-sm:hover,
@@ -182,8 +197,8 @@ h3.page-title {
   background: #003f7a !important;
 }
 .btn-default:hover {
-  color: #FFF!important;
-} 
+  color: #fff !important;
+}
 .btn.btn-primary {
   text-transform: uppercase;
 }
@@ -217,6 +232,14 @@ header#page-header .card-body {
   margin: -30px -20px;
   padding: 0 20px;
 }
+@media (max-width:780px){
+  #page #region-main > .card,
+#page #region-main > .groupinfobox,
+#page .userprofile .profile_tree #region-main > section,
+.userprofile .profile_tree #page #region-main > section {
+  margin: -50px;
+}
+}
 
 /*desce o conteúdo que estava subindo no header*/
 #page #region-main {
@@ -224,12 +247,12 @@ header#page-header .card-body {
   margin-top: 40px;
 }
 
-/*determina o tamanho do box do conteúdo do curso, padding de 20px para desgrudar o bloco cinza das laterais, desalinhou os textos com o "enrolled students" */
+/*determina o tamanho do box do conteúdo do curso, padding de 20px para desgrudar o bloco cinza das laterais, desalinhou os textos com o "enrolled students" 
 #region-main div[role="main"] {
   padding: 0 20px;
   margin-top: 40px;
 }
-
+*/
 /*Sobe todo o box do conteúdo*/
 .pagelayout-course #region-main {
   padding: 25px 0 !important;
@@ -242,7 +265,7 @@ header#page-header .card-body {
   margin-top: -20px;
 }
 
-/*tira o estilo da lista, é necessário?*/
+/*tira o estilo da lista */
 .course-content ul.topics {
   margin: 0px;
   list-style: none;
@@ -274,7 +297,7 @@ header#page-header .card-body {
 .loginform .card,
 .loginform .card-body {
   background-color: #20292f46;
-  color: #FFF;
+  color: #fff;
 }
 .loginform .card {
   height: 100%;
@@ -285,26 +308,27 @@ header#page-header .card-body {
 #page-login-index p {
   color: #fff;
 }
-#page-login-index .page-brand-info *, #page-login-signup .page-brand-info * {
+#page-login-index .page-brand-info *,
+#page-login-signup .page-brand-info * {
   line-height: 12px;
   padding-top: 12px;
   margin: 0;
 }
 .loginform h6 {
-  color: #FFF;
+  color: #fff;
   font-size: 15px;
 }
-#page-login-index footer#page-footer .logininfo, 
-#page-login-index footer#page-footer .homelink, 
-#page-login-index footer#page-footer .tool_dataprivacy, 
-#page-login-index footer#page-footer a, 
-#page-login-index footer#page-footer .performanceinfo, 
-#page-login-index footer#page-footer .logininfo, 
-#page-login-index footer#page-footer .homelink, 
-#page-login-index footer#page-footer .tool_dataprivacy, 
+#page-login-index footer#page-footer .logininfo,
+#page-login-index footer#page-footer .homelink,
+#page-login-index footer#page-footer .tool_dataprivacy,
+#page-login-index footer#page-footer a,
+#page-login-index footer#page-footer .performanceinfo,
+#page-login-index footer#page-footer .logininfo,
+#page-login-index footer#page-footer .homelink,
+#page-login-index footer#page-footer .tool_dataprivacy,
 #page-login-index footer#page .pageinfo,
-footer#page-footer .performanceinfo, 
-footer#page-footer .tool_dataprivacy, 
+footer#page-footer .performanceinfo,
+footer#page-footer .tool_dataprivacy,
 footer#page .pageinfo.loginform,
 #page-login-index footer.page-copyright {
   display: none;
@@ -320,16 +344,19 @@ footer#page-footer .site-footer-legal {
 }
 /*Pagina do SITE*/
 /*Links rápidos*/
-#page-site-index .links-rapidos h4 {
+.links-rapidos h4 {
   font-size: 12px !important;
   line-height: 18px;
-  font-weight: 500 !important;
+}
+.links-rapidos a {
+  color: #5a5a5a;
+  font-weight: 500;
 }
 
 i.links-rapidos-ico {
   font-size: 35px;
 }
-.links-rapidos{
+.links-rapidos {
   padding: 0 2rem;
   margin: 0 auto !important;
   height: 3;
@@ -340,11 +367,6 @@ i.links-rapidos-ico {
   margin: 0;
   margin-top: 50px;
   font-size: 20px;
-}
-.separador {
-  border-right: 1px solid #ccc;
-  height: 25em;
-  margin-top: 30px;
 }
 
 /*tutoriais*/
@@ -372,17 +394,17 @@ i.links-rapidos-ico {
   box-shadow: 1px 5px 10px #52606940;
 }
 /*linha do tempo*/
-.block-timeline div[data-region=event-list-item] {
-  padding: 25px 10px!important;
+.block-timeline div[data-region="event-list-item"] {
+  padding: 25px 10px !important;
 }
 
 .block_timeline h5 {
-  text-transform:uppercase;
-  font-weight:600;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-[data-region="event-list-item"] small:nth-child(3){
-  font-size:18px;
+[data-region="event-list-item"] small:nth-child(3) {
+  font-size: 18px;
 }
 
 /*Itens acessados recentemente*/
@@ -571,7 +593,9 @@ div#region-main-box {
 /*---AJUSE DO COURSE OVERVIEW---*/
 /*botão ferramenta*/
 #page-mod-page-view div#action-menu-2-menubar,
-#page-mod-assign-view div#action-menu-2-menubar{
+#page-mod-assign-view div#action-menu-2-menubar,
+#page-mod-folder-view div#action-menu-2-menubar,
+#page-course-view-topics div#action-menu-2-menubar{
   margin-top: -50px;
 }
 .course-content ul.topics h1 {
@@ -591,7 +615,7 @@ img.activityicon {
   text-transform: uppercase;
 }
 .section .activity .activityinstance > a:hover {
-  color: #089CA8;
+  color: #089ca8;
   font-weight: 500;
 }
 
@@ -762,7 +786,8 @@ img.activityicon {
 
 /*Alinhamento do links das etapas*/
 
-.section .activity .activityinstance>a, .section .activity .contentwithoutlink>a{
+.section .activity .activityinstance > a,
+.section .activity .contentwithoutlink > a {
   text-indent: 0;
   padding-left: 23px;
 }
@@ -836,7 +861,11 @@ img.activityicon {
 .gradingform_rubric .criteria .score {
   display: none;
 }
-
+/*ícone edição de pauta*/
+.fa-play:before {
+  content: "\f111";
+  color: #439a42;
+}
 /*Label do TP na descrição das competencias*/
 .tpn {
   display: inline-block;
@@ -950,47 +979,155 @@ img.activityicon {
 }
 /*Correção de TP*/
 /*Dados do user*/
-.path-mod-assign [data-region=user-info] h4 {
+.path-mod-assign [data-region="user-info"] h4 {
   line-height: 20px;
 }
-.path-mod-assign [data-region=user-info] a>em {
+.path-mod-assign [data-region="user-info"] a > em {
   font-size: 15px;
 }
-.path-mod-assign [data-region=assignment-info] {
+.path-mod-assign [data-region="assignment-info"] {
   line-height: 20px;
   margin-top: 10px;
 }
-.path-mod-assign [data-region=grade-panel] .fitem.has-popout{
+.path-mod-assign [data-region="grade-panel"] .fitem.has-popout {
   padding: 10px;
 }
-.path-mod-assign [data-region=grade-panel] .mform .fitem .felement[data-fieldtype=grading] {
+.path-mod-assign
+  [data-region="grade-panel"]
+  .mform
+  .fitem
+  .felement[data-fieldtype="grading"] {
   padding-left: 0;
   padding-right: 0;
 }
 #page-mod-assign-grader .gradeform .fcontainer {
   padding: 0;
+  margin-top: -20px;
 }
-.path-mod-assign [data-region="grade-panel"] .gradingform_rubric .criterion .description {
+.path-mod-assign
+  [data-region="grade-panel"]
+  .gradingform_rubric
+  .criterion
+  .description {
   min-width: 200px;
   padding-bottom: 20px;
 }
-.path-mod-assign [data-region=grade-panel] .has-popout .col-md-3 {
+.path-mod-assign [data-region="grade-panel"] .has-popout .col-md-3 {
   display: none !important;
 }
 .path-mod-assign [data-region="grade-panel"] div.submissionstatustable {
   margin-bottom: 0em;
 }
-.path-mod-assign [data-region=grade-panel] .fitem.row, .path-mod-assign [data-region=grade-panel] fieldset {
-  margin-top: -1em;
+
+#page-mod-assign-submit .checkbox {
+  position: relative;
+  display: block;
+  padding-left: 1.429rem;
+  background-color: #ffca28;
+  padding: 15px 15px 10px;
+  border-radius: 3px;
+  font-weight: 400;
+  text-shadow: 0px 1px 1px rgb(0 0 0 / 20%);
+}
+
+.path-mod-assign td.submissionstatussubmitted,
+.path-mod-assign div.submissionstatussubmitted,
+.path-mod-assign a:link.submissionstatussubmitted {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffd740;
+  margin-bottom: 5px;
+  padding: 9px 5px;
+  border-radius: 2px;
+}
+.path-mod-assign [data-region="grade-panel"] .fitem.has-popout {
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.path-mod-assign td.earlysubmission,
+.path-mod-assign div.earlysubmission {
+  color: #fff;
+  background-color: #4285f4;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.path-mod-assign td.submissionstatus, .path-mod-assign div.submissionstatus, .path-mod-assign a:link.submissionstatus
+ {
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.path-mod-assign td.gradingreminder, .path-mod-assign div.gradingreminder {
+  padding: 5px;
+  margin: 5px 0;
+}
+/*Avaliação avançada TP*/
+#page-grade-grading-pick .template-actions a {
+  display: inline-block;
+  background: #0074e0;
+  color: #FFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+  padding: 8px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  margin-right: 16px;
+  text-shadow: none;
+}
+#page-grade-grading-pick .template-actions a:hover{
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.26);
+}
+
+#page-grade-grading-pick .template-actions a i {
+  display: inline-block;
+  padding: 0 8px 0 0;
+  font-size: 20px;
+}
+#page-grade-grading-pick .template-actions a div {
+  display: inline-block;
+}
+.fa-trash:before{
+  content: "\f00d";
+  color:red;
+  }
+
+/*status dos tps*/
+.path-mod-assign td.submissionstatusdraft, .path-mod-assign div.submissionstatusdraft, .path-mod-assign a:link.submissionstatusdraft, 
+.path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded {
+    background-color: #8BC34A;
+    padding: 10px;
+}
+
+/*Relatório - Disciplina Regular*/
+/*botão - exportar para excel*/
+@media (min-width:992px){
+#page-report-coursecompetencies-index a.btn.btn-primary {
+  float: right;
+  padding: 5px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1.2;
+  position: relative;
+  bottom: 50px;
+}
+}
+.well {
+  padding: 1.429rem 1rem;
+  margin-bottom: 1.5rem;
+  width: 70%;
 }
 
 /*---Footer---*/
 #page-footer a {
-  color: #FFF;
+  color: #fff;
 }
 #page-footer a:hover {
   text-decoration: underline;
-  color: #FFF;
+  color: #fff;
 }
 #page-footer h4 {
   text-transform: uppercase;
