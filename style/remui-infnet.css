@@ -1,9 +1,4 @@
 /*AJUSTES DO REMUI*/
-/*Ajuste bloco da barra direita do remui */
-ul {
-  padding-inline-start: 15px;
-}
-
 /*Esconder banco de conteudo e arquivo privado*/
 .license-notice {
   display: none;
@@ -12,9 +7,6 @@ ul {
   display: none !important;
 }
 #nav-drawer [data-key="privatefiles"] {
-  display: none !important;
-}
-#nav-drawer [data-key="mycourses"] {
   display: none !important;
 }
 [data-original-title="Course Archive Page"] {
@@ -213,7 +205,7 @@ header#page-header .card-body {
 }
 
 .container {
-  max-width: 1680px;
+  max-width: 100%;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
@@ -294,20 +286,25 @@ header#page-header .card-body {
   background-color: #20292f46;
 }
 
+
 .loginform .card,
 .loginform .card-body {
   background-color: #20292f46;
-  color: #fff;
+  /*color: #fff;*/
 }
+
 .loginform .card {
   height: 100%;
 }
 
+/*
 #page-login-index .checkbox-custom label,
 #page-login-index h3,
 #page-login-index p {
   color: #fff;
 }
+*/
+
 #page-login-index .page-brand-info *,
 #page-login-signup .page-brand-info * {
   line-height: 12px;
@@ -333,9 +330,12 @@ footer#page .pageinfo.loginform,
 #page-login-index footer.page-copyright {
   display: none;
 }
+
+/* permitir login pelo form temporariamente
 form#login {
   display: none;
 }
+*/
 .site-footer-right a:nth-child(4) {
   display: none;
 }
@@ -696,6 +696,11 @@ img.activityicon {
   padding-top: 332px;
 }
 
+/*Botão de edição da etapa esta escondido atras da foto*/
+.course-content ul.topics li.section .left, .course-content ul.topics li.section .right, .course-content ul.weeks li.section .left, .course-content ul.weeks li.section .right {
+  padding-top: 332px;
+}
+
 /*muda cor do box da introdução etapas*/
 .pagelayout-course #section-0 {
   background-color: #fff !important;
@@ -1043,9 +1048,12 @@ img.activityicon {
   padding: 0px;
   margin-bottom: 10px;
 }
+
+.path-mod-assign td.submissionstatusdraft, .path-mod-assign div.submissionstatusdraft, .path-mod-assign a:link.submissionstatusdraft, .path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded
+
 .path-mod-assign td.earlysubmission,
 .path-mod-assign div.earlysubmission {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.87);
   background-color: #4285f4;
   padding: 5px;
   border-radius: 2px;
@@ -1105,15 +1113,15 @@ img.activityicon {
 /*Relatório - Disciplina Regular*/
 /*botão - exportar para excel*/
 @media (min-width:992px){
-#page-report-coursecompetencies-index a.btn.btn-primary {
-  float: right;
-  padding: 5px 20px;
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: 1.2;
-  position: relative;
-  bottom: 50px;
-}
+  #page-report-coursecompetencies-index a.btn.btn-primary {
+    float: right;
+    padding: 5px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.2;
+    position: relative;
+    bottom: 50px;
+  }
 }
 .well {
   padding: 1.429rem 1rem;
@@ -1143,7 +1151,6 @@ img.activityicon {
   padding: 5px 0;
 }
 .footer-bottom {
-  background-image: url(//10.0.2.121/moodle/pluginfile.php/1/theme_remui/logo/1622227037/logotipo.png);
   background-repeat: no-repeat;
   margin: 10px 40px !important;
   padding-top: 10px;
@@ -1152,4 +1159,9 @@ img.activityicon {
 #page-footer .container {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding-bottom: 10px;
+}
+
+/*compensar margin negativa(-50px) da pagina inicial do site*/
+#page-site-index #page-footer{
+  margin: 50px 0;
 }
