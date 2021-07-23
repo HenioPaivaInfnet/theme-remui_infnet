@@ -331,11 +331,10 @@ footer#page .pageinfo.loginform,
   display: none;
 }
 
-/* permitir login pelo form temporariamente
-form#login {
-  display: none;
+/* permitir login pelo form temporariamente*/
+#page-login-index form#login {
+    display: none;
 }
-*/
 .site-footer-right a:nth-child(4) {
   display: none;
 }
@@ -392,19 +391,6 @@ i.links-rapidos-ico {
 }
 #page-my-index section[role="complementary"] {
   box-shadow: 1px 5px 10px #52606940;
-}
-/*linha do tempo*/
-.block-timeline div[data-region="event-list-item"] {
-  padding: 25px 10px !important;
-}
-
-.block_timeline h5 {
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-[data-region="event-list-item"] small:nth-child(3) {
-  font-size: 18px;
 }
 
 /*Itens acessados recentemente*/
@@ -795,6 +781,15 @@ img.activityicon {
 .section .activity .contentwithoutlink > a {
   text-indent: 0;
   padding-left: 23px;
+}
+
+#page-mod-page-view .modified {
+  display: none;
+}
+
+/*Remove botão de remover de envio na entraga de uma tarefa*/
+[value='removesubmissionconfirm'] + button{
+  display: none;
 }
 
 /*---APARENCIAS DAS VISUALIZAÇÂO DE COMPETENCIAS---*/
