@@ -2,7 +2,7 @@
 Tema filho para o Moodle do Remui 3.9
 
 ## Instruções:
-Esse reposotorio do tema deve estar preferecialmente sempre atualizado, pois caso seja necessario instalar novamente o tema filho, todas as modificações no tema estarão documentadas. 
+Esse reposotorio do tema deve estar preferecialmente atualizado, pois caso seja necessario instalar novamente o tema filho, todas as modificações no tema estarão documentadas. 
 
 ### Fluxo para manter o tema atualizado:
 
